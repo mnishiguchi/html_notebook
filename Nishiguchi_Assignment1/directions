@@ -1,0 +1,20 @@
+You need to do 2 problems from Chapter 2.
+
+You can find the description of the problems at end of chapter2. They are called Slideshow and Election. All required files are given in the attached zip files.
+
+Slideshow:
+- Follow instructions in book.
+- Then add an additional slide image to the slideshow.
+- Your slideshow should rotate through 7 images.
+- The previous next, end and first buttons should perform work as required.
+
+Election:
+- Complete the problem as described in the text.
+
+Submitting of work:
+- Submit your work as messages zipped as a single file by Blackboard messages. - The zipped folder should be named using your lastname xxxxAssignment1.
+- The zipfile should have 2 zipped files, one for slideshow and other is elextion. These files should be named using your lastname.
+
+Nishiguchi Assignment1
+|-- Nishiguchi Slideshow
+|-- Nishiguchi Election
