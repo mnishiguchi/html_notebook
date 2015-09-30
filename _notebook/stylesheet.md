@@ -2,16 +2,68 @@
 
 - Note: Enter the style names in alphabetical order so that we can make our stylesheets easier to manage
 
+## Defining a styling rule
+
+### User-defined styles
+
+- Modifies the default setting of the browser's internal stylesheet
+
+### External stylesheets
+
+- Stored in an external stylesheet
+- Loaded after internal and user-defined stylesheets
+- Take precedence over any rules set in the browser's internal stylesheet or in a user-defined stylesheet
+
+```html
+<link href="nishiguchi_styles.css" rel="stylesheet" type="text/css" />
+```
+
+### Embedded stylesheets
+
+- Inserted directly within the head element of the HTML document, using the style element
+- Applied only in the web page in which it is placed
+- Note: Always place embedded stylesheets  after external stylesheets to avoid confusion about which stylesheet is loaded last
+
+```html
+<style type="text/css">
+     h1 {
+        text-align: center;
+     }
+     p {
+        color: pink;
+        font-size: 50px;
+     }
+</style>
+```
+
+### Inline styles
+
+- Applied directly to specific elements, using the style element
+- Not recommended
+```html
+ <h4 style="color: green; text-align: center;">Course Outline</h4>
+```
+
+### Importing style rules from other style sheets
+- https://developer.mozilla.org/en-US/docs/Web/CSS/@import
+
+```css
+/* Import layout style sheet */
+@import url(cw_layout.css);
+```
+
 ## Precedence
 - The stylesheet that is loaded last has precedence over stylesheets loaded earlier
 
 ### the order in which styesheets are interpreted
 [ACCESSED LAST]
+
 1. author's inline styles
 2. author's embedded stylesheet
 3. author's external stylesheet
 4. user-defined styles
 5. browser's nternal stylesheet
+
 [ACCESSED FIRST]
 
 ## Colors
@@ -49,17 +101,55 @@
 - E.g., Older browsers that do not support CSS3 will ignore the RGBA
 
 ## Contextual selectors
+- [w3.org](http://www.w3.org/TR/CSS21/selector.html%23id-selectors)
+- [w3schools.com](http://www.w3schools.com/cssref/css_selectors.asp)
+- http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
 
-- `*`: Matches any element in the hierarchy
-- `e`: Matches any element e in the hierarchy
-- `e1, e2, ...`: Matches the group of elements e1, e2, ...
-- `e f`: Matches any element f that is a descendent of an element e
-- `e>f`: Matches any element f that is a direct child of an element e
-- `e+f`: Matches any element f that is immediately preceeded by a sibling element e
-- `e~f`: Matches any element f that is a sibling to an element e
+### *
+- Select **all elements** in the document
+- aka wildcard selector
+
+### e
+- Select **any element e** in the document
+
+### e1, e2, ...
+- Select the **group** of elements e1, e2, ...
+
+### e f
+- **descendent selector**
+- Select any element f that is a **descendent of** an element e
+
+### e>f
+- *child selector*
+- Select any element f that is a **direct child of** an element e
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Child_selectors
+
+### e+f
+- **adjacent selector**
+- Select any element f that is placed **immediately after** an element e
+
+### e~f
+- **sibling combinator**
+- Select any element f that is a **sibling to** an element e
+- similar to e+f, but less strict
 
 ## Attribute selectors
 
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
 - [w3schools](http://www.w3schools.com/css/css_attribute_selectors.asp)
+
+## Creating a link to #id_name
+
+```html
+<!--Define an element id-->
+<body>
+   <header id="top">
+      ...
+   </header>
+</body>
+
+<!--Create a link to an #id_name-->
+<a href="index.htm#top">Back to top of the page</a>
+```
+
 
