@@ -52,6 +52,8 @@
 @import url(cw_layout.css);
 ```
 
+==
+
 ## Precedence
 - The stylesheet that is loaded last has precedence over stylesheets loaded earlier
 
@@ -66,6 +68,8 @@
 
 [ACCESSED FIRST]
 
+==
+
 ## Colors
 
 ### RGB triplet
@@ -73,7 +77,7 @@
 - The format
     + `#FFFF00`
     + `rgb(255, 255, 0)`
-    + `rgb(100%, 65%, 0%`
+    + `rgb(100%, 65%, 0%)`
 
 ### HSL color values
 - Describes colors based on hue, saturation and lightness
@@ -96,9 +100,24 @@
 - Set the transparency of the color as a decimal
 - Ranges from 0.0 up to 1.0, where { 0.0: completely transparent, 1.0: completely opaque }
 
+==
+
 ## Progressive enhancement
 - Placing code conforming to older standards before newer properties
 - E.g., Older browsers that do not support CSS3 will ignore the RGBA
+
+==
+
+## Style inheritance
+- passed from a parent element to its children
+- not all properties are inherited
+- The summary of every CSS property definition says whether that property is inherited by default ("Inherited: Yes") or not inherited by default ("Inherited: no"). This controls what happens when no value is specified for a property on an element.
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance
+- http://www.w3schools.com/cssref/css_inherit.asp
+- [css-properties-are-inherited](http://stackoverflow.com/questions/5612302/which-css-properties-are-inherited)
+
+==
 
 ## Contextual selectors
 - [w3.org](http://www.w3.org/TR/CSS21/selector.html%23id-selectors)
@@ -133,10 +152,14 @@
 - Select any element f that is a **sibling to** an element e
 - similar to e+f, but less strict
 
+==
+
 ## Attribute selectors
 
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
 - [w3schools](http://www.w3schools.com/css/css_attribute_selectors.asp)
+
+==
 
 ## Creating a link to #id_name
 
@@ -150,6 +173,23 @@
 
 <!--Create a link to an #id_name-->
 <a href="index.htm#top">Back to top of the page</a>
+```
+
+==
+
+## Font family
+- http://www.w3schools.com/cssref/pr_font_font-family.asp
+- If a font name contains white-space, it must be quoted. Single quotes must be used when using the "style" attribute in HTML.
+- If the browser does not support the first font, it tries the next font.
+
+```css
+h1#top {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: "Times New Roman", Georgia, Serif;
+}
 ```
 
 
