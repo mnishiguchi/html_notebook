@@ -193,4 +193,42 @@ p {
 }
 ```
 
+==
+
+## Overlaying stuff on an image
+
+- [position:relativeとposition:absoluteで画像や文字を重ねてみよう](http://naifix.com/relative-absolute/) 
+
+==
+
+## Unicode - Geometric Shapes
+- https://en.m.wikipedia.org/wiki/Geometric_Shapes
+
+==
+
+## 点滅
+- [CSSでテキスト、画像、何でも点滅](http://www.will-hp.com/wpblog/web/72/)
+
+==
+
+## Dividing a paragraph into three column layout
+
+```css
+#intro p {
+   -moz-column-count: 3;
+   -webkit-column-count: 3;
+    column-count: 3;
+
+   -moz-column-gap: 20px;
+   -webkit-column-gap: 20px;
+    column-gap: 20px;
+
+   -moz-column-rule: 1px solid black;
+   -webkit-column-rule: 1px solid black;
+    column-rule: 1px solid black;
+}  
+
+```
+
+==
 

@@ -1,6 +1,8 @@
 # JavaScript, jQuery, etc
 
 ## Blinking
+- [Some tricks](http://black-flag.net/jquery/20120124-3649.html)
+- [Can be done in CSS as well](http://www.will-hp.com/wpblog/web/72/)
 
 ```js
 setInterval(function() {
@@ -16,3 +18,4 @@ $("div#startBlink").on('click', function(){
     },1000)
 });
 ```
+
