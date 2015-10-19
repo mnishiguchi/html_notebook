@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      New Perspectives on HTML
+      Tutorial 5
+      Case Problem 4
+
+      Hamilton Conference Center Page
+      Author: Masatoshi Nishiguchi
+      Date:   10/14/2015
+
+      Filename:         conference.htm
+      Supporting files: hcclogo.jpg, hcc.css, schedule.css, modernizr-1.5.js
+
+
+      # The context
+      The Hamilton Conference Center is a general-use facility for the community,
+      hosts several organizations and clubs as well as special events and shows by
+      local vendors.
+
+      # About this website
+      - Employee and guests can easily track which conference rooms are available
+      and which are being used.
+      - Contains a table that displays the reservation information and the table
+      lays out the room use for seven rooms and halls from 8:00am to 5:00pm in
+      half-hour increments.
+      - Eventually, this process will be automated by the conference's web server,
+      but for now, we will only set up a sample web page layout and design.
+      -->
+
+      <meta charset="UTF-8" />
+      <title>Hamilton Conference Center</title>
+
+      <!--Document author-->
+      <meta name="author" content="Masatoshi Nishiguchi">
+
+      <!--Keywords for Web search engines-->
+      <meta name="keywords" content="Hamilton, Ohio, conference, reservation,
+      general-use facility, community">
+
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+      <!-- Stylesheets -->
+      <link href="hcc.css" rel="stylesheet" type="text/css" />
+      <link href="schedule.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="site-content">
+      <hgroup>
+        <h1><img src="hcclogo.jpg" alt="hcclogo" /></h1>
+        <h2>Reservation Information</h2>
+      </hgroup>
+
+      <p>
+        The Hamilton Conference Center is a general-use facility for the community
+        in Hamilton, Ohio
+        <br />
+        We host several organizations and clubs as well as special events and shows by
+        local vendors.
+      </p>
+      <p>
+        <span class="uppercase">Book now!</span> We have five awesome rooms in
+        our facilities from 8:00 a.m. to 5:00 p.m.
+        <br /> Please refer below for our current reservation status.
+      </p>
+
+      <table class="reservation-info"
+            summary="Lists which conference rooms are available and which are being used.
+                     8:00 a.m. to 5:00 p.m. (eastern time)">
+        <caption>Eastern time</caption>
+
+        <colgroup>
+           <col class="timeColumn" />             <!-- col1 -->
+           <col class="cols-small-room" span="3" /><!-- col2-4 -->
+           <col class="cols-large-room" span="2" /><!-- col5-6 -->
+        </colgroup>
+
+        <thead>
+            <tr class="todays-date">
+              <th colspan="6">
+                <a href=# title="day before"><i class="fa fa-caret-left"></i></a>
+                &nbsp;Monday, October 19&nbsp;
+                <a href=# title="day after"><i class="fa fa-caret-right"></i></a>
+
+              </th>
+            </tr>
+            <tr class="room-names">
+              <th></th>
+              <th>Room 1</th>
+              <th>Room 2</th>
+              <th>Room 3</th>
+              <th>Room 4</th>
+              <th>Room 5</th>
+           </tr>
+        </thead>
+
+        <tbody>
+           <tr>
+              <th><span>8</span>:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>8</span>:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>9</span>:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>9</span>:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>10</span>:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>10</span>:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>11</span>:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>11</span>:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>12</span>:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>12</span>:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>1</span>:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>1</span>:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>2</span>:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>2</span>:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>3</span>:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>3</span>:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>4</span>:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+           <tr>
+              <th><span>4</span>:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+            <tr>
+              <th><span>5</span>:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+           </tr>
+
+        </tbody>
+      </table>
+
+      <footer>
+         <address>
+            The Hamilton Conference Center &#183;
+            4300 Magnolia Lane &#183;
+            Hailton, OH 58504 &#183;
+            (701) 555 - 5611 &#183;
+            <a href="http://mnishiguchi.github.io/" target="_blank">Masatoshi Nisihguchi</a>
+         </address>
+      </footer>
+    </div>
+
+
+
+    <!-- JavaScripts -->
+    <script src="modernizr-1.5.js"></script>
+  </body>
+</html>

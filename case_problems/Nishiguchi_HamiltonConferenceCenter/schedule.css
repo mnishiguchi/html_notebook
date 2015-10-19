@@ -11,4 +11,100 @@
    Supporting Files: none
 */
 
-/* Section Styles */
+/* Table styles */
+
+table.reservation-info {
+   border: 2px solid black;
+   border-collapse: collapse;
+   font-family: Arial, Verdana, sans-serif;
+   width: 100%;
+}
+
+
+
+/* Table caption styles */
+
+table.reservation-info caption {
+   text-align: left;
+   font-size: 0.8em;
+   caption-side: bottom;
+}
+
+
+
+/* Table body cell styles */
+
+table.reservation-info tbody td {
+   border: 1px solid gray;
+   font-size: 0.7em;
+   vertical-align: top;
+   padding: 2px;
+}
+
+
+
+/* Table row styles */
+
+table.reservation-info tr {
+   height: 25px;
+}
+
+
+
+/* Table header styles */
+
+/* THEAD (header) - Default */
+table.reservation-info thead {
+   color: white;
+}
+
+/* TH elements - default */
+table.reservation-info th {
+   font-size: 0.7em;
+   border: 1px solid gray;
+}
+
+/* THEAD (header) - specifics */
+
+table.reservation-info thead tr.todays-date th {
+   background-color: #0099cc;
+   font-size: 1.5em;
+   height: 40px;
+}
+
+table.reservation-info thead tr.room-names th {
+   background-color: #666;
+   font-size: 1.2em;
+   height: 30px;
+}
+
+
+
+/* Styles for the table columns */
+
+table.reservation-info col.timeColumn {
+    background-color: #DDD;
+}
+
+table.reservation-info col.cols-small-room {
+}
+
+table.reservation-info col.cols-large-room {
+}
+
+
+
+/* Styles for the table body */
+
+table.reservation-info tbody th {
+  vertical-align: top;
+  text-align: right;
+}
+
+table.reservation-info tbody th span {
+     font-size: 1.5em;
+}
+
+table.reservation-info tbody tr td {
+     height: 64px;
+}
