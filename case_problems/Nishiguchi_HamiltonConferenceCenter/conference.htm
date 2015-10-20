@@ -48,175 +48,252 @@
   </head>
 
   <body>
+
+    <nav class="top-nav">
+       <ul>
+        <li>
+           <a href=#>Home Page</a>
+        </li>
+        <li>
+           <a href=#>Reservations</a>
+        </li>
+        <li>
+           <a href=#>Facilities</a>
+        </li>
+        <li>
+           <a href=#>Virtual Tour</a>
+        </li>
+        <li>
+           <a href=#>Staff</a>
+        </li>
+        <li>
+           <a href=#>Calendar of Events</a>
+        </li>
+        <li>
+           <a href=#>Contact Info</a>
+        </li>
+        <li>
+           <a href=#>Directions</a>
+        </li>
+        <li>
+           <a href=#>FAQ</a>
+        </li>
+      </ul>
+    </nav>
+
     <div class="site-content">
-      <hgroup>
-        <h1><img src="hcclogo.jpg" alt="hcclogo" /></h1>
-        <h2>Reservation Information</h2>
+      <hgroup class="page-header">
+        <h1>
+          <img class="logo" src="hcclogo.jpg" alt="hcclogo" />
+        </h1>
+        <h1>Reservations for Conference Rooms</h1>
       </hgroup>
 
-      <p>
-        The Hamilton Conference Center is a general-use facility for the community
-        in Hamilton, Ohio
-        <br />
-        We host several organizations and clubs as well as special events and shows by
-        local vendors.
-      </p>
-      <p>
-        <span class="uppercase">Book now!</span> We have five awesome rooms in
-        our facilities from 8:00 a.m. to 5:00 p.m.
-        <br /> Please refer below for our current reservation status.
-      </p>
+      <section class="card rooms-info">
+        <h2>Our conference rooms</h2>
 
-      <table class="reservation-info"
-            summary="Lists which conference rooms are available and which are being used.
-                     8:00 a.m. to 5:00 p.m. (eastern time)">
-        <caption>Eastern time. <br />Rooms 1, 2 and 3 are small rooms; Rooms 4 and 5 are large room.</caption>
+          <table>
+            <thead>
+              <th>Room name</th>
+              <th>Maximum Capacity</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sunrise Room</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>Moutain View Room</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>Arbor Hall</td>
+                <td>190</td>
+              </tr>
+              <tr>
+                <td>Mitchell Theatre</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td>Gold Room</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>Blue Room</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Green Room</td>
+                <td>55</td>
+              </tr>
+            </tbody>
 
-        <colgroup>
-           <col class="timeColumn" />              <!-- col1 -->
-           <col class="cols-small-room" span="3" /><!-- col2-4 -->
-           <col class="cols-large-room" span="2" /><!-- col5-6 -->
-        </colgroup>
+          </table>
+      </section>
 
-        <thead>
-            <tr class="todays-date">
-              <th colspan="6">
-                <a href=# title="day before"><i class="fa fa-caret-left"></i></a>
-                &nbsp;Monday, October 19&nbsp;
-                <a href=# title="day after"><i class="fa fa-caret-right"></i></a>
-              </th>
-            </tr>
-            <tr class="room-names">
-              <th></th>
-              <th>Meeting rooms 1</th>
-              <th>Meeting rooms 2</th>
-              <th>Meeting rooms 3</th>
-              <th>Conference room 1</th>
-              <th>Conference room 2</th>
-           </tr>
-        </thead>
+      <section class="card how-to-reserve-rooms">
+        <h2 class="uppercase">How to reserve rooms</h2>
+        <p>
+          To reserve a room, please contact Yancy Inwe at extension 388 or by e-mail at
+          <a href="mailto:yancyinwe@hconfcenter.org" title="email to Yancy Inwe">yancyinwe@hconfcenter.org</a>.<br>
+          Reservations should be made at least 48 hours in advance.<br>
+          Cancellations require 24 hour notice.<br>
+          Room deposits will not be returned for cancellations within 24 hours of the scheduled event.
+        </p>
+      </section>
 
-        <tbody>
-           <tr>
-              <th rowspan="2"><span>8</span>am</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td rowspan="18" class="booked">Android dev conference (All day)</td>
-           </tr>
-           <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-           </tr>
-           <tr>
-              <th rowspan="2"><span>9</span>am</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-           </tr>
-           <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-           </tr>
-           <tr>
-              <th rowspan="2"><span>10</span>am</th>
-              <td rowspan="4" class="booked">Web development study group</td>
-              <td></td>
-              <td rowspan="4" class="booked">Web development study group</td>
-              <td></td>
-           </tr>
-           <tr>
-              <td></td>
-              <td></td>
-           </tr>
-           <tr>
-              <th rowspan="2"><span>11</span>am</th>
-              <td></td>
-              <td></td>
-           </tr>
-           <tr>
-              <td></td>
-              <td></td>
-           </tr>
-           <tr>
-              <th rowspan="2"><span>12</span>pm</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-           </tr>
-           <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-           </tr>
-           <tr>
-              <th rowspan="2"><span>1</span>pm</th>
-              <td></td>
-              <td rowspan="4" class="booked">Ruby on Rails meet up group</td>
-              <td></td>
-              <td></td>
-           </tr>
-           <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-           </tr>
-           <tr>
-              <th rowspan="2"><span>2</span>pm</th>
-              <td></td>
-              <td></td>
-              <td></td>
-           </tr>
-           <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-           </tr>
-           <tr>
-              <th rowspan="2"><span>3</span>pm</th>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-           </tr>
-           <tr>
-              <td rowspan="3" class="booked">Java crazy group</td>
-              <td></td>
-              <td rowspan="3" class="booked">Java crazy group</td>
-              <td></td>
-           </tr>
-           <tr>
-              <th rowspan="2"><span>4</span>pm</th>
-              <td></td>
-              <td></td>
-           </tr>
-           <tr>
-              <td></td>
-              <td></td>
-           </tr>
-        </tbody>
-      </table>
+      <section class="card">
+        <h2 class="uppercase">Current status of our rooms</h2>
+        <table class="reservation-info"
+              summary="Lists which conference rooms are available and which are being used.
+                       8:00 a.m. to 5:00 p.m. (eastern time)">
+          <caption>Eastern time zone (UTC - 5:00)</caption>
+
+          <colgroup>
+             <col class="timeColumn" />              <!-- col1 -->
+             <col class="cols-small-room" span="3" /><!-- col2-4 -->
+             <col class="cols-large-room" span="2" /><!-- col5-6 -->
+          </colgroup>
+
+          <thead>
+              <tr class="todays-date">
+                <th colspan="6">
+                  <a href=# title="day before"><i class="fa fa-caret-left"></i></a>
+                  &nbsp; Tuesday, April 11 &nbsp;
+                  <a href=# title="day after"><i class="fa fa-caret-right"></i></a>
+                </th>
+              </tr>
+              <tr class="room-names">
+                <th></th>
+                <th>Meeting rooms 1</th>
+                <th>Meeting rooms 2</th>
+                <th>Meeting rooms 3</th>
+                <th>Conference room 1</th>
+                <th>Conference room 2</th>
+             </tr>
+          </thead>
+
+          <tbody>
+             <tr>
+                <th rowspan="2"><span>8</span>am</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="18" class="booked">Android dev conference (All day)</td>
+             </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <th rowspan="2"><span>9</span>am</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <th rowspan="2"><span>10</span>am</th>
+                <td rowspan="4" class="booked">Web development study group</td>
+                <td></td>
+                <td rowspan="4" class="booked">Web development study group</td>
+                <td></td>
+             </tr>
+             <tr>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <th rowspan="2"><span>11</span>am</th>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <th rowspan="2"><span>12</span>pm</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <th rowspan="2"><span>1</span>pm</th>
+                <td></td>
+                <td rowspan="4" class="booked">Ruby on Rails meet up group</td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <th rowspan="2"><span>2</span>pm</th>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <th rowspan="2"><span>3</span>pm</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <td rowspan="3" class="booked">Java crazy group</td>
+                <td></td>
+                <td rowspan="3" class="booked">Java crazy group</td>
+                <td></td>
+             </tr>
+             <tr>
+                <th rowspan="2"><span>4</span>pm</th>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <td></td>
+                <td></td>
+             </tr>
+          </tbody>
+        </table>
+      </section>
 
       <footer>
          <address>
-            The Hamilton Conference Center &#183;
-            4300 Magnolia Lane &#183;
-            Hailton, OH 58504 &#183;
-            (701) 555 - 5611 &#183;
+            Hamilton Conference Center &#183;
+            8711 West Park Lane &#183;
+            Hamilton, OH 45011 &#183;
+            (513) 555 - 7911 &#183;
+            Owner:
             <a href="http://mnishiguchi.github.io/" target="_blank">Masatoshi Nisihguchi</a>
          </address>
       </footer>
     </div>
-
-
 
     <!-- JavaScripts -->
     <script src="modernizr-1.5.js"></script>

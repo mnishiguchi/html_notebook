@@ -16,7 +16,7 @@
 /* Global */
 
 body {
-  background-color: #FEFEFE;
+  background-color: #FFF;
   font-family: "proxima-nova", Helvetica, Arial, sans-serif;
 }
 
@@ -35,6 +35,46 @@ span.capitalize {
 
 span.uppercase {
     text-transform: uppercase;
+}
+
+
+
+/* Navbar
+  reference: http://css-snippets.com/simple-horizontal-navigation/
+*/
+.top-nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.top-nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  border-bottom: 1px solid #888;
+  display: inline-block;
+  line-height: 50px;
+  height: 50px;
+  margin-right: -4px;
+  padding: 0 20px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 0.3s background-color;
+}
+
+.top-nav a:hover {
+  background-color: #005f5f;
+}
+
+.top-nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
 }
 
 
@@ -69,4 +109,82 @@ footer ul {
 footer li {
   float: left;
   margin-left: 15px;
+}
+
+.card {
+  padding:1.5rem;
+  box-shadow:0 1px 2px #aaa;
+  background: #EFE;
+  margin:0 1rem 1rem;
+  border-radius:3px;
+  user-select:none;
+  animation:fly-in-from-left .5s 1s ease both;
+  transform-origin:top left;
+}
+
+
+/**
+ * The rooms information
+ */
+
+.rooms-info table {
+  border-collapse: separate;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  box-shadow:  10px 10px 5px #888888;
+  border: 1px solid #3f7f00;
+}
+
+.rooms-info table thead {
+  line-height: 30px;
+}
+
+.rooms-info table tbody tr:nth-child(odd) {
+  background-color: #d4ffaa;
+}
+
+.rooms-info table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.rooms-info table tbody td {
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #3f7f00;
+  border-width: 0px 1px 1px 0px;
+  padding: 7px;
+  font-size: 1.1em;
+  font-family: Arial;
+  font-weight: normal;
+  color: #000000;
+}
+
+.rooms-info table tbody tr:last-child td{
+  border-width: 0px 1px 0px 0px;
+}
+
+.rooms-info table tbody tr td:last-child{
+  border-width: 0px 0px 1px 0px;
+}
+
+.rooms-info table tbody tr:last-child td:last-child{
+  border-width: 0px 0px 0px 0px;
+}
+
+.rooms-info table thead th {
+  background: -o-linear-gradient(bottom, #5fbf00 5%, #3f7f00 100%);
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5fbf00), color-stop(1, #3f7f00) );
+  background: -moz-linear-gradient( center top, #5fbf00 5%, #3f7f00 100% );
+  background: -o-linear-gradient(top,#5fbf00,3f7f00);
+
+  background-color: #5fbf00;
+  border: 0px solid #3f7f00;
+  vertical-align: middle;
+  text-align: center;
+  border-width: 0px 0px 1px 1px;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #ffffff;
 }

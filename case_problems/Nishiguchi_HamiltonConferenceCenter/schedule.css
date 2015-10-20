@@ -12,11 +12,16 @@
    Description:      The styles for the table
 */
 
+
+/**
+ * The reservation info table
+ */
+
 /* Table styles */
 
 table.reservation-info {
-   border: 2px solid black;
    border-collapse: collapse;
+   border: 2px solid black;
    font-family: Arial, Verdana, sans-serif;
    width: 100%;
 }
@@ -27,8 +32,10 @@ table.reservation-info {
 
 table.reservation-info caption {
    text-align: left;
-   font-size: 0.8em;
+   font-size: 1.0em;
    caption-side: bottom;
+   margin-top: 1.0em;
+   color: #666;
 }
 
 
@@ -122,9 +129,14 @@ table.reservation-info tbody tr td {
 }
 
 
+
+
 /* Hourly dividors */
 table.reservation-info tbody tr:nth-child(odd) {
 }
+
+
+
 
 /* Reserved cells */
 td.booked {
