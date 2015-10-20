@@ -63,32 +63,35 @@ table.reservation-info th {
 /* Specifics */
 
 table.reservation-info thead tr.todays-date th {
-   background-color: #0099cc;
-   font-size: 1.5em;
-   height: 60px;
+    background-color: #0099cc;
+    font-size: 1.5em;
+    height: 60px;
 }
 
 table.reservation-info thead tr.room-names th {
-   background-color: #DDD;
-   font-size: 1.0em;
-   height: 30px;
-   width: 18%;
+    background-color: #DDD;
+    font-size: 1.0em;
+    height: 30px;
 }
 
+/* Change different styles for */
 table.reservation-info thead tr.room-names th:first-of-type {
-  width: 10%;
+    width: 6%;
 }
 
 table.reservation-info thead tr.room-names th:nth-of-type(2),
 table.reservation-info thead tr.room-names th:nth-of-type(3),
-table.reservation-info thead tr.room-names th:nth-of-type(4) {
-   color: #9933cc;
-
+table.reservation-info thead tr.room-names th:nth-of-type(4),
+table.reservation-info thead tr.room-names th:nth-of-type(5) {
+    width: 13%;
+    color: #ff8a00;
 }
 
-table.reservation-info thead tr.room-names th:nth-of-type(5),
-table.reservation-info thead tr.room-names th:nth-of-type(6) {
-   color: #ff8a00;
+table.reservation-info thead tr.room-names th:nth-of-type(6),
+table.reservation-info thead tr.room-names th:nth-of-type(7),
+table.reservation-info thead tr.room-names th:nth-of-type(8) {
+    width: 12%;
+    color: #9933cc;
 }
 
 
@@ -130,15 +133,13 @@ table.reservation-info tbody tr td {
 
 
 
-
 /* Hourly dividors */
 table.reservation-info tbody tr:nth-child(odd) {
 }
 
 
 
-
 /* Reserved cells */
 td.booked {
-    background-color: #2cb1e1;
+    background-color: #6dcaec;
 }

@@ -89,8 +89,19 @@
         <h1>Reservations for Conference Rooms</h1>
       </hgroup>
 
+      <section class="card how-to-reserve-rooms">
+        <h2 class="uppercase">How to reserve rooms</h2>
+        <p>
+          To reserve a room, please contact Yancy Inwe at extension 388 or by e-mail at
+          <a href="mailto:yancyinwe@hconfcenter.org" title="email to Yancy Inwe">yancyinwe@hconfcenter.org</a>.<br>
+          Reservations should be made at least 48 hours in advance.<br>
+          Cancellations require 24 hour notice.<br>
+          Room deposits will not be returned for cancellations within 24 hours of the scheduled event.
+        </p>
+      </section>
+
       <section class="card rooms-info">
-        <h2>Our conference rooms</h2>
+        <h2>Maximum capacity of each room</h2>
 
           <table>
             <thead>
@@ -131,17 +142,6 @@
           </table>
       </section>
 
-      <section class="card how-to-reserve-rooms">
-        <h2 class="uppercase">How to reserve rooms</h2>
-        <p>
-          To reserve a room, please contact Yancy Inwe at extension 388 or by e-mail at
-          <a href="mailto:yancyinwe@hconfcenter.org" title="email to Yancy Inwe">yancyinwe@hconfcenter.org</a>.<br>
-          Reservations should be made at least 48 hours in advance.<br>
-          Cancellations require 24 hour notice.<br>
-          Room deposits will not be returned for cancellations within 24 hours of the scheduled event.
-        </p>
-      </section>
-
       <section class="card">
         <h2 class="uppercase">Current status of our rooms</h2>
         <table class="reservation-info"
@@ -149,15 +149,16 @@
                        8:00 a.m. to 5:00 p.m. (eastern time)">
           <caption>Eastern time zone (UTC - 5:00)</caption>
 
+          <!-- This is to specify different background colors, widths, etc -->
           <colgroup>
-             <col class="timeColumn" />              <!-- col1 -->
-             <col class="cols-small-room" span="3" /><!-- col2-4 -->
-             <col class="cols-large-room" span="2" /><!-- col5-6 -->
+             <col class="timeColumn" />
+             <col class="cols-large-room" span="4" />
+             <col class="cols-small-room" span="3" />
           </colgroup>
 
           <thead>
               <tr class="todays-date">
-                <th colspan="6">
+                <th colspan="8">
                   <a href=# title="day before"><i class="fa fa-caret-left"></i></a>
                   &nbsp; Tuesday, April 11 &nbsp;
                   <a href=# title="day after"><i class="fa fa-caret-right"></i></a>
@@ -165,25 +166,28 @@
               </tr>
               <tr class="room-names">
                 <th></th>
-                <th>Meeting rooms 1</th>
-                <th>Meeting rooms 2</th>
-                <th>Meeting rooms 3</th>
-                <th>Conference room 1</th>
-                <th>Conference room 2</th>
+                <th>Sunrise Room</th>
+                <th>Moutain View Room</th>
+                <th>Arbor Hall</th>
+                <th>Mitchell Theatre</th>
+                <th>Gold Room</th>
+                <th>Blue Room</th>
+                <th>Green Room</th>
              </tr>
           </thead>
 
           <tbody>
              <tr>
                 <th rowspan="2"><span>8</span>am</th>
+                <td class="booked" rowspan="4">Marriage Encounter</td>
+                <td class="booked" rowspan="2">Breakfast Club of Ohio</td>
+                <td class="booked" rowspan="8">Computer Expo set up</td>
+                <td></td>
+                <td class="booked" rowspan="3">The Tompkins Group</td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td rowspan="18" class="booked">Android dev conference (All day)</td>
              </tr>
              <tr>
-                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -192,30 +196,34 @@
                 <th rowspan="2"><span>9</span>am</th>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td class="booked" rowspan="3">Retirement Planning</td>
+                <td class="booked" rowspan="4">Drivers' Ed</td>
              </tr>
              <tr>
-                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
              </tr>
              <tr>
                 <th rowspan="2"><span>10</span>am</th>
-                <td rowspan="4" class="booked">Web development study group</td>
                 <td></td>
-                <td rowspan="4" class="booked">Web development study group</td>
+                <td></td>
+                <td></td>
                 <td></td>
              </tr>
              <tr>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td class="booked" rowspan="3">Pearson Planning</td>
+                <td class="booked" rowspan="3">The Senior Group</td>
              </tr>
              <tr>
                 <th rowspan="2"><span>11</span>am</th>
                 <td></td>
+                <td class="booked" rowspan="4">Ohio Conference of Librarians</td>
                 <td></td>
+                <td class="booked" rowspan="5">Movie Club</td>
              </tr>
              <tr>
                 <td></td>
@@ -223,13 +231,13 @@
              </tr>
              <tr>
                 <th rowspan="2"><span>12</span>pm</th>
+                <td class="booked" rowspan="2">Marriage Encounter Luncheon</td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
+                <td class="booked" rowspan="2">Senior Luncheon</td>
              </tr>
              <tr>
-                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -237,19 +245,25 @@
              <tr>
                 <th rowspan="2"><span>1</span>pm</th>
                 <td></td>
-                <td rowspan="4" class="booked">Ruby on Rails meet up group</td>
+                <td></td>
+                <td class="booked" rowspan="8">Computer Expo opening session</td>
                 <td></td>
                 <td></td>
+                <td class="booked" rowspan="5">Senior Classes</td>
              </tr>
              <tr>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
              </tr>
              <tr>
                 <th rowspan="2"><span>2</span>pm</th>
+                <td class="booked" rowspan="6">Ohio Book Resale Setup</td>
                 <td></td>
                 <td></td>
+                <td class="booked" rowspan="3">Mothers of Multiples</td>
                 <td></td>
              </tr>
              <tr>
@@ -259,25 +273,19 @@
              </tr>
              <tr>
                 <th rowspan="2"><span>3</span>pm</th>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td class="booked" rowspan="4">Marriage Encounter Talks</td>
+                <td class="booked" rowspan="4">Youth Theatre</td>
                 <td></td>
              </tr>
              <tr>
-                <td rowspan="3" class="booked">Java crazy group</td>
-                <td></td>
-                <td rowspan="3" class="booked">Java crazy group</td>
-                <td></td>
+                <td class="booked" rowspan="3">Teen Connection</td>
+                <td class="booked" rowspan="3">Tutoring</td>
+                <td class="booked" rowspan="3">Tutoring</td>
              </tr>
              <tr>
                 <th rowspan="2"><span>4</span>pm</th>
-                <td></td>
-                <td></td>
              </tr>
              <tr>
-                <td></td>
-                <td></td>
              </tr>
           </tbody>
         </table>
