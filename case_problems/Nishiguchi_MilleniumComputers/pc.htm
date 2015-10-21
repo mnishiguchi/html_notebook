@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      New Perspectives on HTML
+      Tutorial 6
+      Case Problem 4
+
+      Millennium Computers
+
+      Author: Masatoshi Nishiguchi
+      Date:   10/21/2015
+
+      Filename:         pc.htm
+      Supporting files: mill.css, oform.css, go.png, stop.png, mclogo.jpg,
+                        formsubmit.js, modernizr-1.5.js
+
+      # The Millennium Computers
+      A discount mail-order company specializing in computers and computer
+      components.
+
+      # About this website
+      - An order form web page so that customers can purchase products online.
+      - For computer purchase only.
+      - Several options for customer to consider when purchasing computers from Millennium.
+          + Prosessor speed:   3.2, 4, 5.2 GHz
+          + Memory:            1, 2, 4, 8 GB
+          + Monitor size:      15", 17", 19", 21"
+          + Hard drive:        240GB, 500GB, 750GB, 1TB
+          + DVD burner:        yes / no
+          + Tuner card:        yes / no
+          + Media card reader: yes / no
+      -->
+
+      <meta charset="UTF-8" />
+      <title>Millennium Computers</title>
+
+      <!--Document author-->
+      <meta name="author" content="Masatoshi Nishiguchi">
+
+      <!--Keywords for Web search engines-->
+      <meta name="keywords" content="computers, computer components, mail-order, online-order">
+
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+      <!-- Stylesheets -->
+      <link href="stylesheets/mill.css" rel="stylesheet" type="text/css" />
+      <link href="stylesheets/oform.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+
+    <nav class="top-nav">
+    <img src="images/mclogo.jpg" alt="mclogo">
+       <ul>
+        <li>
+           <a href=#>Home</a>
+        </li>
+        <li>
+           <a href=#>Contact</a>
+        </li>
+        <li>
+           <a href=#>FAQ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="clock">
+      <h1 id="time-now">current time</h1>
+    </section>
+    <div class="cf"></div>
+
+    <div class="site-content">
+
+      <h1>Order form</h1>
+
+      <section class="card order-form">
+        <!--
+
+          - Option buttons
+            + dvd
+            + tuner
+            + mCard
+
+          - Checkbox
+            + warranty
+
+          - Textarea
+            + additional info or comments
+
+          - Three form buttons
+            + Send order
+            + Cancel order
+            + Contact me
+
+          - Validation checks
+            + Mark all the required fields
+
+          - Regular expression
+            + Validate zipcode, phone number format
+
+        -->
+
+
+        <form>
+
+            <!-- field names -->
+            <fieldset id="customer-info">
+              <legend>Customer information</legend>
+
+              <p>
+                <label for="Name">First Name</label>
+                <input type="text" name="Name"></input>
+              </p>
+              <p>
+                <label for="lName">Last Name</label>
+                <input type="text"  name="lName"></textarea>
+              </p>
+              <p>
+                <label for="street">Street</label>
+                <input type="text" name="street"></input>
+              </p>
+              <p>
+                <label for="city">City</label>
+                <input type="text" name="city"></input>
+              </p>
+              <p>
+                <label for="state">State</label>
+                <input type="text" name="state"></input>
+              </p>
+              <p>
+                <label for="zip">Zip</label>
+                <input type="text" name="zip"></input>
+              </p>
+              <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone"></input>
+              </p>
+            </fieldset>
+
+            <!-- Specs selection -->
+
+            <fieldset id="computer-specs">
+              <legend>Select computer specs</legend>
+
+              <!-- pSpeed
+              Prosessor speed:   3.2, 4, 5.2 GHz
+              -->
+              <p>
+                <label for="pSpeed">Processor speed</label>
+                <select name="pSpeed" id="pSpeed">
+                  <option value="3.2">3.2 GHz</option>
+                  <option value="4.0">4.0 GHz</option>
+                  <option value="5.2" selected>5.2 GHz</option>
+                </select>
+              </p>
+
+              <!-- mem
+              Memory: 1, 2, 4, 8 GB
+              -->
+              <p>
+                <label for="mem">Memory</label>
+                <select name="mem" id="mem">
+                  <option value="1">1 GB</option>
+                  <option value="2">2 GB</option>
+                  <option value="4" selected>4 GB</option>
+                  <option value="8">8 GB</option>
+                </select>
+              </p>
+
+              <!-- monitor
+              Monitor size:      15", 17", 19", 21"
+              -->
+              <p>
+                <label for="monitor">Monitor</label>
+                <select name="monitor" id="monitor">
+                  <option value="15">15"</option>
+                  <option value="17">17"</option>
+                  <option value="19" selected>19"</option>
+                  <option value="21">21"</option>
+                </select>
+              </p>
+
+              <!-- hd
+              Hard drive:        240GB, 500GB, 750GB, 1TB
+              -->
+              <p>
+                <label for="hd">Hard drive</label>
+                <select name="240GB" id="hd">
+                  <option value="pSpeed">240 GB</option>
+                  <option value="500GB">500 GB</option>
+                  <option value="750GB" selected>750 GB</option>
+                  <option value="1TB">1 TB</option>
+                </select>
+              </p>
+
+            </fieldset>
+
+            <!--
+            - Option buttons
+              + dvd
+              + tuner
+              + mCard
+            -->
+
+
+
+            <!-- Radio button -->
+            <label for="optionGroup">Was your service friendly?</label>
+            <fieldset class="optionGroup">
+              <label for="selectYes">selectYes</label>
+              <input type="radio" id="selectYes" name="serviceFriendly" value="yes">
+              <label for="selectNo">selectNo</label>
+              <input type="radio" id="selectNo" name="serviceFriendly" value="no">
+            </fieldset>
+
+        </form>
+
+      </section>
+
+      <footer>
+        <small>&copy; 2015 <a href="http://mnishiguchi.github.io/" target="_blank">Masatoshi Nisihguchi</a></small>
+      </footer>
+    </div>
+
+    <!-- JavaScripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="javascripts/modernizr-1.5.js"></script>
+    <script src="javascripts/formsubmit.js"></script>
+    <script src="javascripts/custom.js"></script>
+  </body>
+</html>

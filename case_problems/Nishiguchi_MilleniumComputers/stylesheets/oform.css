@@ -1,0 +1,74 @@
+/*
+   New Perspectives on HTML
+   Tutorial 6
+   Case Problem 4
+
+   Millennium Computers
+
+   Author: Masatoshi Nishiguchi
+   Date:   10/21/2015
+
+   Filename:         oform.css
+   Supporting Files: none
+   Description:      The styles for the order form
+*/
+
+
+/**
+ * Universal
+ */
+form p {
+    margin-left:20px;
+    width: 400px;
+}
+
+legend {
+  font-size: 1.4em;
+}
+
+label {
+color: #B4886B;
+font-weight: bold;
+display: block;
+width: 150px;
+float: left;
+}
+label:after { content: ": " }
+
+
+/**
+ * Selection items styles
+
+ select {
+  display: block;
+  float: left;
+  font-size: 0.9em;
+  margin: 7px 0px;
+}
+ */
+
+
+
+
+/**
+ * Option button styles
+ */
+
+fieldset.optionGroup {
+  border-width: 0px;
+}
+
+fieldset.optionGroup label {
+  display: inline;
+  float: none;
+  margin: 0px 3px 0px 0px;
+  width: 30px;
+}
+
+fieldset.optionGroup input {
+  display: inline;
+  float: none;
+  margin: 0px 20px 0px 0px;
+  width: 20px;
+}
+

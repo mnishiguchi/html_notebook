@@ -4,6 +4,7 @@
    Case Problem 4
 
    Hamilton Conference Center Style Sheet
+
    Author: Masatoshi Nishiguchi
    Date:   10/14/2015
 
@@ -54,7 +55,7 @@
 }
 
 .reservation-info table thead tr.scheduling-date th {
-    background-color: #0099cc;
+    background-color: #0099CC;
     font-size: 2.0em;
     height: 60px;
 }
@@ -81,22 +82,22 @@
 /* Columns in the header */
 
 .reservation-info table thead tr.room-names th:first-of-type {
-    width: 6%;
+    width: 5%;
 }
 
 .reservation-info table thead tr.room-names th:nth-of-type(2),
 .reservation-info table thead tr.room-names th:nth-of-type(3),
 .reservation-info table thead tr.room-names th:nth-of-type(4),
 .reservation-info table thead tr.room-names th:nth-of-type(5) {
-    width: 13%;
+    width: 14%;
     color: #ff8a00;
 }
 
 .reservation-info table thead tr.room-names th:nth-of-type(6),
 .reservation-info table thead tr.room-names th:nth-of-type(7),
 .reservation-info table thead tr.room-names th:nth-of-type(8) {
-    width: 12%;
-    color: #9933cc;
+    width: 11%;
+    color: #9933CC;
 }
 
 

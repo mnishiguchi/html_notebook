@@ -3,8 +3,7 @@
    Tutorial 5
    Case Problem 4
 
-   Hamilton Conference Center JavaScripts
-
+   Hamilton Conference Center Style Sheet
    Author: Masatoshi Nishiguchi
    Date:   10/14/2015
 
