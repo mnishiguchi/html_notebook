@@ -12,7 +12,7 @@
 
       Filename:         conference.htm
       Supporting files: hcclogo.jpg, hcc.css, schedule.css, modernizr-1.5.js
-
+      Dependencies:     Font Awesome
 
       # The Hamilton Conference Center
       a general-use facility for the community, hosts several organizations and
@@ -42,8 +42,8 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
       <!-- Stylesheets -->
-      <link href="hcc.css" rel="stylesheet" type="text/css" />
-      <link href="schedule.css" rel="stylesheet" type="text/css" />
+      <link href="stylesheets/hcc.css" rel="stylesheet" type="text/css" />
+      <link href="stylesheets/schedule.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -83,7 +83,7 @@
     <div class="site-content">
       <hgroup class="page-header">
         <h1>
-          <img class="logo" src="hcclogo.jpg" alt="hcclogo" />
+          <img class="logo" src="images/hcclogo.jpg" alt="hcclogo" />
         </h1>
         <h1>Reservations for Conference Rooms</h1>
       </hgroup>
@@ -116,11 +116,11 @@
           </colgroup>
 
           <thead>
-              <tr class="todays-date">
+              <tr class="scheduling-date">
                 <th colspan="8">
-                  <a href=# title="day before"><i class="fa fa-caret-left"></i></a>
-                  &nbsp; Tuesday, April 11 &nbsp;
-                  <a href=# title="day after"><i class="fa fa-caret-right"></i></a>
+                  <a id="date-before" title="day before"><i class="fa fa-caret-left"></i></a>
+                  &nbsp; <span id="scheduling-date"></span> &nbsp;
+                  <a id="date-after" title="day after"><i class="fa fa-caret-right"></i></a>
                 </th>
               </tr>
               <tr class="room-names">
@@ -305,7 +305,9 @@
     </div>
 
     <!-- JavaScripts -->
-    <script src="modernizr-1.5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="javascripts/modernizr-1.5.js"></script>
+    <script src="javascripts/custom.js"></script>
   </body>
 </html>
