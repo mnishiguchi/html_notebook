@@ -71,6 +71,29 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /**
+ * Page header
+ */
+.page-header {
+}
+
+
+/**
+ * Clock
+ */
+section.clock {
+  background-color: #CCC;
+  padding: 0 2.0em;
+  float: right;
+  border-radius: 40px;
+}
+
+#time-now {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 1.2em;
+}
+
+
+/**
  * How to reserve rooms section
  */
 section.how-to-reserve-rooms h3 {

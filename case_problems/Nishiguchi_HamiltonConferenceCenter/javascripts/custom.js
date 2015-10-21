@@ -28,3 +28,10 @@ $( document ).ready(function() {
       $("#scheduling-date").text(schedulingDate.add(1, "days").format("dddd, MMMM Do"));
    });
 });
+
+// Keep on updating the current time
+$( document ).ready(function() {
+  setInterval(function() {
+      $("#time-now").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
+  }, 1000);
+});

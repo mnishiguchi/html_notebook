@@ -59,6 +59,18 @@
     height: 60px;
 }
 
+.reservation-info table thead tr.scheduling-date i.fa-caret-left {
+  margin-left: 1.5em;
+  float: left;
+  font-size: 1.2em;
+}
+
+.reservation-info table thead tr.scheduling-date i.fa-caret-right {
+  margin-right: 1.5em;
+  float: right;
+  font-size: 1.2em;
+}
+
 .reservation-info table thead tr.room-names th {
     background-color: #DDD;
     font-size: 1.0em;
