@@ -47,15 +47,44 @@ label:after { content: ": " }
 }
  */
 
-
+/**
+ * Textarea styles
+ */
+textarea {
+  display: block;
+  font-size: 0.9em;
+  float: left;
+  height: 150px;
+  margin: 10px 10px;
+  width: 50%;
+}
 
 
 /**
- * Option button styles
+ * Check box styles
  */
+#mychackbox {
+  color: rgb(233,69, 0);
+  float: none;
+  margin: 10px auto;
+  text-align: center;
+  width: 90%;
+}
 
+#mychackbox input {
+  display: inline;
+  float: none;
+  width: 20px;
+}
+
+
+/**
+ * Option button styles (Radio buttons)
+ */
 fieldset.optionGroup {
   border-width: 0px;
+  vertical-align: top;
+  padding: 0;
 }
 
 fieldset.optionGroup label {
@@ -63,6 +92,9 @@ fieldset.optionGroup label {
   float: none;
   margin: 0px 3px 0px 0px;
   width: 30px;
+  color: #666;
+  font-weight: normal;
+  font-size: 0.9em;
 }
 
 fieldset.optionGroup input {

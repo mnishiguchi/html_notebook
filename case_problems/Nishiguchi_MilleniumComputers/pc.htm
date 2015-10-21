@@ -78,11 +78,6 @@
       <section class="card order-form">
         <!--
 
-          - Option buttons
-            + dvd
-            + tuner
-            + mCard
-
           - Checkbox
             + warranty
 
@@ -145,7 +140,7 @@
               <legend>Select computer specs</legend>
 
               <!-- pSpeed
-              Prosessor speed:   3.2, 4, 5.2 GHz
+              Prosessor speed: 3.2, 4, 5.2 GHz
               -->
               <p>
                 <label for="pSpeed">Processor speed</label>
@@ -170,7 +165,7 @@
               </p>
 
               <!-- monitor
-              Monitor size:      15", 17", 19", 21"
+              Monitor size: 15", 17", 19", 21"
               -->
               <p>
                 <label for="monitor">Monitor</label>
@@ -183,7 +178,7 @@
               </p>
 
               <!-- hd
-              Hard drive:        240GB, 500GB, 750GB, 1TB
+              Hard drive: 240GB, 500GB, 750GB, 1TB
               -->
               <p>
                 <label for="hd">Hard drive</label>
@@ -197,23 +192,45 @@
 
             </fieldset>
 
-            <!--
-            - Option buttons
+            <!-- Option buttons (radio buttons)
               + dvd
               + tuner
               + mCard
             -->
+            <fieldset id="computer-options">
+              <legend>Options</legend>
 
-
-
-            <!-- Radio button -->
-            <label for="optionGroup">Was your service friendly?</label>
-            <fieldset class="optionGroup">
-              <label for="selectYes">selectYes</label>
-              <input type="radio" id="selectYes" name="serviceFriendly" value="yes">
-              <label for="selectNo">selectNo</label>
-              <input type="radio" id="selectNo" name="serviceFriendly" value="no">
+              <p>
+                <label for="dvd">DVD</label>
+                <fieldset class="dvd optionGroup">
+                  <label for="dvd">Yes</label>
+                  <input type="radio" name="dvd" value="yes">
+                  <label for="dvd-no">No</label>
+                  <input type="radio" name="dvd" value="no">
+                </fieldset>
+              </p>
+              <p>
+                <label for="tuner">Tuner</label>
+                <fieldset class="tuner optionGroup">
+                  <label for="tuner">Yes</label>
+                  <input type="radio" name="tuner" value="yes">
+                  <label for="tuner-no">No</label>
+                  <input type="radio" name="tuner" value="no">
+                </fieldset>
+              </p>
+              <p>
+                <label for="mCard">Memory card</label>
+                <fieldset class="mCard optionGroup">
+                  <label for="mCard">Yes</label>
+                  <input type="radio" name="mCard" value="yes">
+                  <label for="mCard-no">No</label>
+                  <input type="radio" name="mCard" value="no">
+                </fieldset>
+              </p>
             </fieldset>
+
+
+
 
         </form>
 
