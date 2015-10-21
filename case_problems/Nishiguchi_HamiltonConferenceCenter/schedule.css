@@ -16,10 +16,7 @@
 /**
  * The reservation info table
  */
-
-/* Table styles */
-
-table.reservation-info {
+.reservation-info table {
    border-collapse: collapse;
    border: 2px solid black;
    font-family: Arial, Verdana, sans-serif;
@@ -27,10 +24,9 @@ table.reservation-info {
 }
 
 
-
 /* Table caption styles */
 
-table.reservation-info caption {
+.reservation-info table caption {
    text-align: left;
    font-size: 1.0em;
    caption-side: bottom;
@@ -39,10 +35,9 @@ table.reservation-info caption {
 }
 
 
-
 /* Table row styles */
 
-table.reservation-info tr {
+.reservation-info table tr {
    height: 25px;
 }
 
@@ -50,96 +45,89 @@ table.reservation-info tr {
 
 /* Table header styles */
 
-/* Default */
-table.reservation-info thead {
+.reservation-info table thead {
    color: white;
 }
 
-table.reservation-info th {
+.reservation-info table th {
    font-size: 0.7em;
    border: 1px solid gray;
 }
 
-/* Specifics */
-
-table.reservation-info thead tr.todays-date th {
+.reservation-info table thead tr.todays-date th {
     background-color: #0099cc;
     font-size: 1.5em;
     height: 60px;
 }
 
-table.reservation-info thead tr.room-names th {
+.reservation-info table thead tr.room-names th {
     background-color: #DDD;
     font-size: 1.0em;
-    height: 30px;
+    height: 40px;
 }
 
-/* Change different styles for */
-table.reservation-info thead tr.room-names th:first-of-type {
+
+/* Columns in the header */
+
+.reservation-info table thead tr.room-names th:first-of-type {
     width: 6%;
 }
 
-table.reservation-info thead tr.room-names th:nth-of-type(2),
-table.reservation-info thead tr.room-names th:nth-of-type(3),
-table.reservation-info thead tr.room-names th:nth-of-type(4),
-table.reservation-info thead tr.room-names th:nth-of-type(5) {
+.reservation-info table thead tr.room-names th:nth-of-type(2),
+.reservation-info table thead tr.room-names th:nth-of-type(3),
+.reservation-info table thead tr.room-names th:nth-of-type(4),
+.reservation-info table thead tr.room-names th:nth-of-type(5) {
     width: 13%;
     color: #ff8a00;
 }
 
-table.reservation-info thead tr.room-names th:nth-of-type(6),
-table.reservation-info thead tr.room-names th:nth-of-type(7),
-table.reservation-info thead tr.room-names th:nth-of-type(8) {
+.reservation-info table thead tr.room-names th:nth-of-type(6),
+.reservation-info table thead tr.room-names th:nth-of-type(7),
+.reservation-info table thead tr.room-names th:nth-of-type(8) {
     width: 12%;
     color: #9933cc;
 }
 
 
+/* Column groups */
 
-/* Styles for the table columns */
-
-table.reservation-info col.timeColumn {
+.reservation-info table col.timeColumn {
     background-color: #DDD;
 }
 
-table.reservation-info col.cols-small-room {
+.reservation-info table col.cols-small-room {
     background-color: #f5eafa;
 }
 
-table.reservation-info col.cols-large-room {
+.reservation-info table col.cols-large-room {
     background-color: #fff6df;
 }
 
 
+/* tbody */
 
-/* Table body styles */
-
-table.reservation-info tbody th {
+.reservation-info table tbody th {
     vertical-align: top;
     text-align: right;
 }
 
-table.reservation-info tbody th span {
+.reservation-info table tbody th span {
     font-size: 1.5em;
 }
 
-table.reservation-info tbody tr td {
+.reservation-info table tbody tr td {
     border: 1px solid gray;
     font-size: 1.0em;
     vertical-align: top;
     padding: 2px;
-    height: 64px;
+    height: 30px;
 }
-
-
-
-/* Hourly dividors */
-table.reservation-info tbody tr:nth-child(odd) {
-}
-
 
 
 /* Reserved cells */
+
 td.booked {
     background-color: #6dcaec;
+    color: #333;
+    font-style: italic;
 }

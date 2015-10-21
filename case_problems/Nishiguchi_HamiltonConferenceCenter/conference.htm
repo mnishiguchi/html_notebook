@@ -14,10 +14,9 @@
       Supporting files: hcclogo.jpg, hcc.css, schedule.css, modernizr-1.5.js
 
 
-      # The context
-      The Hamilton Conference Center is a general-use facility for the community,
-      hosts several organizations and clubs as well as special events and shows by
-      local vendors.
+      # The Hamilton Conference Center
+      a general-use facility for the community, hosts several organizations and
+      clubs as well as special events and shows by local vendors.
 
       # About this website
       - Employee and guests can easily track which conference rooms are available
@@ -91,67 +90,27 @@
 
       <section class="card how-to-reserve-rooms">
         <h2 class="uppercase">How to reserve rooms</h2>
+        <h3>
+          Please contact Yancy Inwe at extension 388 or by e-mail at
+          <a href="mailto:yancyinwe@hconfcenter.org" title="email to Yancy Inwe">yancyinwe@hconfcenter.org</a>.
+        </h3>
         <p>
-          To reserve a room, please contact Yancy Inwe at extension 388 or by e-mail at
-          <a href="mailto:yancyinwe@hconfcenter.org" title="email to Yancy Inwe">yancyinwe@hconfcenter.org</a>.<br>
-          Reservations should be made at least 48 hours in advance.<br>
-          Cancellations require 24 hour notice.<br>
-          Room deposits will not be returned for cancellations within 24 hours of the scheduled event.
+          &#9830; Reservations should be made at least 48 hours in advance.<br>
+          &#9830; Cancellations require 24 hour notice.<br>
+          &#9830; Room deposits will not be returned for cancellations within 24 hours of the scheduled event.
         </p>
+        <button class="book-now btn-custom">Book now!</button>
       </section>
 
-      <section class="card rooms-info">
-        <h2>Maximum capacity of each room</h2>
-
-          <table>
-            <thead>
-              <th>Room name</th>
-              <th>Maximum Capacity</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Sunrise Room</td>
-                <td>80</td>
-              </tr>
-              <tr>
-                <td>Moutain View Room</td>
-                <td>150</td>
-              </tr>
-              <tr>
-                <td>Arbor Hall</td>
-                <td>190</td>
-              </tr>
-              <tr>
-                <td>Mitchell Theatre</td>
-                <td>120</td>
-              </tr>
-              <tr>
-                <td>Gold Room</td>
-                <td>40</td>
-              </tr>
-              <tr>
-                <td>Blue Room</td>
-                <td>30</td>
-              </tr>
-              <tr>
-                <td>Green Room</td>
-                <td>55</td>
-              </tr>
-            </tbody>
-
-          </table>
-      </section>
-
-      <section class="card">
+      <section class="card reservation-info">
         <h2 class="uppercase">Current status of our rooms</h2>
-        <table class="reservation-info"
-              summary="Lists which conference rooms are available and which are being used.
-                       8:00 a.m. to 5:00 p.m. (eastern time)">
+        <table summary="Lists which conference rooms are available and which are being used.
+                        8:00 a.m. to 5:00 p.m. (eastern time)">
           <caption>Eastern time zone (UTC - 5:00)</caption>
 
-          <!-- This is to specify different background colors, widths, etc -->
+          <!-- This is to specify styles for different columns -->
           <colgroup>
-             <col class="timeColumn" />
+             <col class="col-time" />
              <col class="cols-large-room" span="4" />
              <col class="cols-small-room" span="3" />
           </colgroup>
@@ -183,11 +142,12 @@
                 <td class="booked" rowspan="2">Breakfast Club of Ohio</td>
                 <td class="booked" rowspan="8">Computer Expo set up</td>
                 <td></td>
-                <td class="booked" rowspan="3">The Tompkins Group</td>
+                <td></td>
                 <td></td>
                 <td></td>
              </tr>
              <tr>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -196,17 +156,16 @@
                 <th rowspan="2"><span>9</span>am</th>
                 <td></td>
                 <td></td>
+                <td class="booked" rowspan="3">The Tompkins Group</td>
                 <td class="booked" rowspan="3">Retirement Planning</td>
                 <td class="booked" rowspan="4">Drivers' Ed</td>
              </tr>
              <tr>
                 <td></td>
                 <td></td>
-                <td></td>
              </tr>
              <tr>
                 <th rowspan="2"><span>10</span>am</th>
-                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -260,8 +219,8 @@
              </tr>
              <tr>
                 <th rowspan="2"><span>2</span>pm</th>
-                <td class="booked" rowspan="6">Ohio Book Resale Setup</td>
                 <td></td>
+                <td class="booked" rowspan="6">Ohio Book Resale Setup</td>
                 <td></td>
                 <td class="booked" rowspan="3">Mothers of Multiples</td>
                 <td></td>
@@ -291,6 +250,48 @@
         </table>
       </section>
 
+      <section class="card rooms-info">
+        <h2>Maximum capacity of each room</h2>
+
+          <table>
+            <thead>
+              <th>Room name</th>
+              <th>Maximum Capacity</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sunrise Room</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>Moutain View Room</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>Arbor Hall</td>
+                <td>190</td>
+              </tr>
+              <tr>
+                <td>Mitchell Theatre</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td>Gold Room</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>Blue Room</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Green Room</td>
+                <td>55</td>
+              </tr>
+            </tbody>
+
+          </table>
+      </section>
+
       <footer>
          <address>
             Hamilton Conference Center &#183;
@@ -305,5 +306,6 @@
 
     <!-- JavaScripts -->
     <script src="modernizr-1.5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
   </body>
 </html>
