@@ -16,7 +16,6 @@
 /**
  * Generic form fields
  */
-
 input[type="text"], textarea, select, option {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -28,10 +27,11 @@ input[type="text"] {
 }
 
 textarea {
-  width: 400px;
+  width: 380px;
   height: 200px;
   padding: 20px;
   font-size: 1.0em;
+  margin: 0 auto;
 }
 
 textarea, input[type="text"], select {
@@ -143,6 +143,7 @@ fieldset.optionGroup input {
     margin: 0px 20px 0px 0px;
     width: 20px;
 }
+
 
 /**
  * Button box

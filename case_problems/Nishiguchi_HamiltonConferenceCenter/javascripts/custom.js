@@ -1,12 +1,12 @@
 /*
    New Perspectives on HTML
-   Tutorial 6
+   Tutorial 5
    Case Problem 4
 
-   Millennium Computers
+   Hamilton Conference Center JavaScripts
 
    Author: Masatoshi Nishiguchi
-   Date:   10/21/2015
+   Date:   10/14/2015
 
    Filename:         custom.js
    Dependencies:     jQuery, moment.js
