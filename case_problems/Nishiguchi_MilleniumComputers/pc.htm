@@ -76,61 +76,45 @@
       <h1>Order form</h1>
 
       <section class="card order-form">
-        <!--
-
-          - Checkbox
-            + warranty
-
-          - Textarea
-            + additional info or comments
-
-          - Three form buttons
-            + Send order
-            + Cancel order
-            + Contact me
-
-          - Validation checks
-            + Mark all the required fields
-
-          - Regular expression
-            + Validate zipcode, phone number format
-
-        -->
-
-
         <form>
-
             <!-- field names -->
             <fieldset id="customer-info">
               <legend>Customer information</legend>
 
-              <p>
-                <label for="Name">First Name</label>
-                <input type="text" name="Name"></input>
+              <p class="required">
+                <label for="Name" >First Name</label>
+                <input type="text" name="Name" required />
               </p>
-              <p>
+              <p class="required">
                 <label for="lName">Last Name</label>
-                <input type="text"  name="lName"></textarea>
+                <input type="text"  name="lName" required></textarea>
               </p>
-              <p>
+              <p class="required">
                 <label for="street">Street</label>
-                <input type="text" name="street"></input>
+                <input type="text" name="street" required />
               </p>
-              <p>
+              <p class="required">
                 <label for="city">City</label>
-                <input type="text" name="city"></input>
+                <input type="text" name="city" required />
               </p>
-              <p>
+              <p class="required">
                 <label for="state">State</label>
-                <input type="text" name="state"></input>
+                <input type="text" name="state" required />
               </p>
-              <p>
+              <p class="required">
                 <label for="zip">Zip</label>
-                <input type="text" name="zip"></input>
+                <input type="text" name="zip" required
+                       placeholder="nnnnn (-nnnn)"
+                       pattern="^\d{5}(\-\d{4}?$" />
+              </p>
+              <p class="required">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" required
+                       placeholder="(nnn) nnn-nnnn"
+                       pattern="^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$" />
               </p>
               <p>
-                <label for="phone">Phone:</label>
-                <input type="tel" name="phone"></input>
+                <small>Required values are marked by an asterisk (*)</small>
               </p>
             </fieldset>
 
@@ -145,9 +129,9 @@
               <p>
                 <label for="pSpeed">Processor speed</label>
                 <select name="pSpeed" id="pSpeed">
-                  <option value="3.2">3.2 GHz</option>
+                  <option value="3.2" selected>3.2 GHz</option>
                   <option value="4.0">4.0 GHz</option>
-                  <option value="5.2" selected>5.2 GHz</option>
+                  <option value="5.2">5.2 GHz</option>
                 </select>
               </p>
 
@@ -171,8 +155,8 @@
                 <label for="monitor">Monitor</label>
                 <select name="monitor" id="monitor">
                   <option value="15">15"</option>
-                  <option value="17">17"</option>
-                  <option value="19" selected>19"</option>
+                  <option value="17" selected>17"</option>
+                  <option value="19">19"</option>
                   <option value="21">21"</option>
                 </select>
               </p>
@@ -182,10 +166,10 @@
               -->
               <p>
                 <label for="hd">Hard drive</label>
-                <select name="240GB" id="hd">
-                  <option value="pSpeed">240 GB</option>
+                <select name="pSpeed" id="hd">
+                  <option value="240GB" selected>240 GB</option>
                   <option value="500GB">500 GB</option>
-                  <option value="750GB" selected>750 GB</option>
+                  <option value="750GB">750 GB</option>
                   <option value="1TB">1 TB</option>
                 </select>
               </p>
@@ -201,37 +185,62 @@
               <legend>Options</legend>
 
               <p>
-                <label for="dvd">DVD</label>
+                <label for="dvd">DVD burner</label>
                 <fieldset class="dvd optionGroup">
                   <label for="dvd">Yes</label>
                   <input type="radio" name="dvd" value="yes">
                   <label for="dvd-no">No</label>
-                  <input type="radio" name="dvd" value="no">
+                  <input type="radio" name="dvd" value="no" checked>
                 </fieldset>
               </p>
               <p>
-                <label for="tuner">Tuner</label>
+                <label for="tuner">Tuner card</label>
                 <fieldset class="tuner optionGroup">
                   <label for="tuner">Yes</label>
                   <input type="radio" name="tuner" value="yes">
                   <label for="tuner-no">No</label>
-                  <input type="radio" name="tuner" value="no">
+                  <input type="radio" name="tuner" value="no" checked>
                 </fieldset>
               </p>
               <p>
-                <label for="mCard">Memory card</label>
+                <label for="mCard">Media card reader</label>
                 <fieldset class="mCard optionGroup">
                   <label for="mCard">Yes</label>
                   <input type="radio" name="mCard" value="yes">
                   <label for="mCard-no">No</label>
-                  <input type="radio" name="mCard" value="no">
+                  <input type="radio" name="mCard" value="no" checked>
                 </fieldset>
               </p>
             </fieldset>
 
+            <!-- Checkbox - warranty
+            -->
+            <fieldset id="warranty">
+              <legend>Warranty</legend>
 
+              <p>
+                <label for="warranty">Add warranty</label>
+                <input type="checkbox" name="warranty" value="1">
+              </p>
+            </fieldset>
 
+            <!-- Textarea - additional info or comments
+            -->
+            <fieldset>
+              <legend>Special instruction</legend>
 
+              <p>
+                <textarea name="additional-info" id="additional-info" cols="30" rows="10"></textarea>
+              </p>
+            </fieldset>
+
+            <!-- Three form buttons
+                + Send order
+                + Cancel order
+                + Contact me-->
+            <input type="submit" value="Send order" class="btn-send-order">
+            <input type="reset" value="Cancel order" class="btn-cancel-order">
+            <button class="btn-contact-me"><i class="fa fa-envelope-o"></i>&nbsp;Contact me</button>
         </form>
 
       </section>

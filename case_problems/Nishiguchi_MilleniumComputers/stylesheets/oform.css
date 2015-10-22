@@ -13,9 +13,78 @@
    Description:      The styles for the order form
 */
 
+/**
+ * Generic form fields
+ */
+
+input[type="text"], textarea, select, option {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  padding: 0 20px;
+}
+
+textarea {
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  font-size: 1.0em;
+}
+
+textarea, input[type="text"], select {
+  border: 2px #CCC solid;
+  border-radius: 5px;
+}
+
+input[type="text"], select > legend {
+  height: 30px;
+  font-family: Tahoma;
+  font-size: 1.0em;
+}
+
+input[type="text"]:hover, textarea:hover, select:hover > legend {
+  background-color: #EEE;
+}
+
+select {
+  padding: 4px 20px;
+  font-size: 0.9em;
+}
+
+option {
+  height: 30px;
+  padding: 5px 4px;
+}
+
+option:not(:checked), textarea:focus {
+  background-color: #EEE;
+}
+
+input[type="text"]:focus, textarea:focus, select:focus > legend {
+  border: 2px #CCAAAA solid;
+}
+
 
 /**
- * Universal
+ * Field sets
+ */
+fieldset {
+  border: 2px #af3333 solid;
+  border-radius: 10px;
+  width: 50%;
+}
+
+/* Direct children of the form */
+form > fieldset {
+  margin-bottom: 30px;
+}
+
+
+/**
+ * Labeling
  */
 form p {
     margin-left:20px;
@@ -23,58 +92,29 @@ form p {
 }
 
 legend {
-  font-size: 1.4em;
+    font-size: 1.4em;
 }
 
 label {
-color: #B4886B;
-font-weight: bold;
-display: block;
-width: 150px;
-float: left;
-}
-label:after { content: ": " }
-
-
-/**
- * Selection items styles
-
- select {
-  display: block;
-  float: left;
-  font-size: 0.9em;
-  margin: 7px 0px;
-}
- */
-
-/**
- * Textarea styles
- */
-textarea {
-  display: block;
-  font-size: 0.9em;
-  float: left;
-  height: 150px;
-  margin: 10px 10px;
-  width: 50%;
+    color: #B4886B;
+    font-weight: bold;
+    display: block;
+    width: 150px;
+    float: left;
 }
 
-
-/**
- * Check box styles
- */
-#mychackbox {
-  color: rgb(233,69, 0);
-  float: none;
-  margin: 10px auto;
-  text-align: center;
-  width: 90%;
+.required label {
+    font-weight: bold;
 }
 
-#mychackbox input {
-  display: inline;
-  float: none;
-  width: 20px;
+.required label:after {
+    color: #E32;
+    content: ' *';
+    display:inline;
+}
+
+#customer-info small {
+    color: #E32;
 }
 
 
@@ -82,25 +122,101 @@ textarea {
  * Option button styles (Radio buttons)
  */
 fieldset.optionGroup {
-  border-width: 0px;
-  vertical-align: top;
-  padding: 0;
+    border-width: 0px;
+    vertical-align: top;
+    padding: 0;
 }
 
 fieldset.optionGroup label {
-  display: inline;
-  float: none;
-  margin: 0px 3px 0px 0px;
-  width: 30px;
-  color: #666;
-  font-weight: normal;
-  font-size: 0.9em;
+    display: inline;
+    float: none;
+    margin: 0px 3px 0px 0px;
+    width: 30px;
+    color: #666;
+    font-weight: normal;
+    font-size: 0.9em;
 }
 
 fieldset.optionGroup input {
-  display: inline;
-  float: none;
-  margin: 0px 20px 0px 0px;
-  width: 20px;
+    display: inline;
+    float: none;
+    margin: 0px 20px 0px 0px;
+    width: 20px;
 }
 
+
+/**
+ * Send order button
+ */
+.btn-send-order {
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.0em;
+    padding: 1.0em;
+    background: #32CD32;
+    color: #FFF;
+}
+
+.btn-send-order:hover, .btn-send-order:focus, .btn-send-order:active,
+.btn-send-order.active, .open > .dropdown-toggle.btn-send-order {
+    background: #28A428;
+    color: #FFF;
+}
+
+.btn-send-order:active, .btn-custom.active {
+    background: #145214;
+    box-shadow: none;
+}
+
+/**
+ * Cancel order button
+ */
+.btn-cancel-order {
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.0em;
+    padding: 1.0em;
+    background: #777;
+    color: #FFF;
+}
+
+.btn-cancel-order:hover, .btn-cancel-order:focus, .btn-cancel-order:active,
+.btn-cancel-order.active, .open > .dropdown-toggle.btn-cancel-order {
+    background: #666;
+    color: #FFF;
+}
+
+.btn-cancel-order:active, .btn-custom.active {
+    background: #555;
+    box-shadow: none;
+}
+
+/**
+ * Contact me button
+ */
+.btn-contact-me {
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.0em;
+    padding: 1.0em;
+    background: #32CD32;
+    color: #FFF;
+    float: right;
+}
+
+.btn-contact-me:hover, .btn-contact-me:focus, .btn-contact-me:active,
+.btn-contact-me.active, .open > .dropdown-toggle.btn-contact-me {
+    background: #28A428;
+    color: #FFF;
+}
+
+.btn-contact-me:active, .btn-contact-me.active {
+    background: #145214;
+    box-shadow: none;
+}
