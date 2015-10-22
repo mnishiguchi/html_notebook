@@ -23,7 +23,7 @@ body {
 }
 
 .site-content {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -35,6 +35,9 @@ h1, h2, h3, h4, h5, h6 {
 /**
  * Navbar at the top
  */
+nav.top-nav {
+    min-width: 555px;
+}
 
 .top-nav .logo {
   float: left;
@@ -81,18 +84,31 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /**
+ * Page header
+ */
+section.page-header {
+  margin: 40px 20px 10px 0;
+  height: 88px;
+}
+
+.page-header li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+
+}
+
+.page-header span {
+  font-size: 2.5em;
+}
+
+
+/**
  * Clock
  */
 section.clock {
-  background-color: #CCC;
-  padding: 0 2.0em;
   float: right;
-  border-radius: 40px;
-}
-
-#time-now {
   font-family: "Lucida Console", Monaco, monospace;
-  font-size: 1.2em;
 }
 
 
@@ -105,6 +121,7 @@ section.clock {
   background:  #EEE;
   margin: 0 1rem 1rem;
   border-radius: 3px;
+  min-width: 480px;
 }
 
 
@@ -142,3 +159,28 @@ footer li {
   margin-left: 15px;
 }
 
+/**
+ * Contact me button
+ */
+.btn-contact-me {
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.0em;
+    padding: 1.0em;
+    background: #5B59BA;
+    color: #FFF;
+    float: right;
+}
+
+.btn-contact-me:hover, .btn-contact-me:focus, .btn-contact-me:active,
+.btn-contact-me.active, .open > .dropdown-toggle.btn-contact-me {
+    background: #483D8B;
+    color: #FFF;
+}
+
+.btn-contact-me:active, .btn-contact-me.active {
+    background: #3B3178;
+    box-shadow: none;
+}

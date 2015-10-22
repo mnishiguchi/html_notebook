@@ -51,14 +51,27 @@
 
   <body>
 
+    <section class="clock">
+      <p id="time-now">
+        <b>Welcome to Millennium!</b> <br />
+        The time now is ...
+      </p>
+    </section>
+
     <nav class="top-nav">
-    <img src="images/mclogo.jpg" alt="mclogo">
+      <img src="images/mclogo.jpg" alt="mclogo">
        <ul>
         <li>
            <a href=#>Home</a>
         </li>
         <li>
-           <a href=#>Contact</a>
+           <a href=#>Catalog</a>
+        </li>
+        <li>
+           <a href=#>Order</a>
+        </li>
+        <li>
+           <a href=#>About us</a>
         </li>
         <li>
            <a href=#>FAQ</a>
@@ -66,14 +79,18 @@
       </ul>
     </nav>
 
-    <section class="clock">
-      <h1 id="time-now">current time</h1>
-    </section>
-    <div class="cf"></div>
-
     <div class="site-content">
 
-      <h1>Order form</h1>
+      <section class="page-header">
+        <ul>
+          <li>
+            <span>Order form</span>
+          </li>
+          <li>
+            <button type="button"class="btn-contact-me"><i class="fa fa-envelope-o"></i>&nbsp;Contact me</button>
+          </li>
+        </ul>
+      </section>
 
       <section class="card order-form">
         <form>
@@ -238,9 +255,11 @@
                 + Send order
                 + Cancel order
                 + Contact me-->
-            <input type="submit" value="Send order" class="btn-send-order">
-            <input type="reset" value="Cancel order" class="btn-cancel-order">
-            <button class="btn-contact-me"><i class="fa fa-envelope-o"></i>&nbsp;Contact me</button>
+            <div class="form-butons">
+              <input type="submit" value="Send order" class="btn-send-order">
+              <input type="reset" value="Cancel order" class="btn-cancel-order">
+            </div>
+
         </form>
 
       </section>

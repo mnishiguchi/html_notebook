@@ -46,7 +46,7 @@ input[type="text"], select > legend {
 }
 
 input[type="text"]:hover, textarea:hover, select:hover > legend {
-  background-color: #EEE;
+  background-color: #f2e5ff;
 }
 
 select {
@@ -60,7 +60,6 @@ option {
 }
 
 option:not(:checked), textarea:focus {
-  background-color: #EEE;
 }
 
 input[type="text"]:focus, textarea:focus, select:focus > legend {
@@ -72,9 +71,10 @@ input[type="text"]:focus, textarea:focus, select:focus > legend {
  * Field sets
  */
 fieldset {
-  border: 2px #af3333 solid;
+  border: 2px #DAA520 solid;
   border-radius: 10px;
   width: 50%;
+  margin: 0 auto;
 }
 
 /* Direct children of the form */
@@ -96,7 +96,7 @@ legend {
 }
 
 label {
-    color: #B4886B;
+    color: #8B4513;
     font-weight: bold;
     display: block;
     width: 150px;
@@ -142,6 +142,13 @@ fieldset.optionGroup input {
     float: none;
     margin: 0px 20px 0px 0px;
     width: 20px;
+}
+
+/**
+ * Button box
+ */
+.form-butons {
+    text-align: center;
 }
 
 
@@ -192,31 +199,5 @@ fieldset.optionGroup input {
 
 .btn-cancel-order:active, .btn-custom.active {
     background: #555;
-    box-shadow: none;
-}
-
-/**
- * Contact me button
- */
-.btn-contact-me {
-    border: 0 none;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 1.0em;
-    padding: 1.0em;
-    background: #32CD32;
-    color: #FFF;
-    float: right;
-}
-
-.btn-contact-me:hover, .btn-contact-me:focus, .btn-contact-me:active,
-.btn-contact-me.active, .open > .dropdown-toggle.btn-contact-me {
-    background: #28A428;
-    color: #FFF;
-}
-
-.btn-contact-me:active, .btn-contact-me.active {
-    background: #145214;
     box-shadow: none;
 }

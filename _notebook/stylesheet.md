@@ -232,3 +232,10 @@ p {
 
 ==
 
+## Vertically Align text in a Div
+- http://stackoverflow.com/questions/2939914/vertically-align-text-in-a-div
+
+==
+
+## よく忘れるCSSの小技
+- http://qiita.com/matsui-a/items/9de76659429593ed7a88#css-clear-fix
