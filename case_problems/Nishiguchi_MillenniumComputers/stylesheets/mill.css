@@ -48,7 +48,7 @@ nav.top-nav {
 
 .top-nav ul {
   list-style: none;
-  background-color: #444;
+  background-color: #000066;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -62,7 +62,6 @@ nav.top-nav {
   line-height: 50px;
   height: 50px;
   margin-right: -4px;
-  padding: 0 20px;
 }
 
 .top-nav a {
@@ -70,15 +69,16 @@ nav.top-nav {
   color: #fff;
   display: block;
   transition: 0.3s background-color;
+  padding: 0 20px;
 }
 
 .top-nav a:hover {
-  background-color: #005F5F;
+  background-color: #009;
 }
 
 .top-nav a.active {
-  background-color: #FFF;
-  color: #444;
+  background-color: #0000E5;
+  color: #EEE;
   cursor: default;
 }
 
@@ -89,17 +89,18 @@ nav.top-nav {
 section.page-header {
   margin: 40px 20px 10px 0;
   height: 88px;
+  min-width: 450px;
 }
 
 .page-header li {
   display: inline;
   list-style-type: none;
   padding-right: 20px;
-
 }
 
 .page-header span {
-  font-size: 2.5em;
+  font-size: 3.0em;
+  font-weight: 500;
 }
 
 
@@ -117,7 +118,7 @@ section.clock {
  */
 .card {
   padding: 2.0em;
-  box-shadow: 0 1px 2px #AAA;
+  box-shadow: 0 4px 8px #999;
   background:  #fafafa;
   margin: 0 1rem 1rem;
   border-radius: 3px;

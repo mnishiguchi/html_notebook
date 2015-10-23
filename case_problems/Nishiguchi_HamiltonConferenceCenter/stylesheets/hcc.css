@@ -196,7 +196,7 @@ footer li {
   padding: 0px;
   width: 100%;
   box-shadow:  10px 10px 5px #888;
-  border: 1px solid #3F7F00;
+  border: 1px solid #004C00;
 }
 
 
@@ -207,18 +207,17 @@ footer li {
 }
 
 .rooms-info table thead th {
-  background: -o-linear-gradient(bottom, #5FBF00 5%, #3F7F00 100%);
-  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5FBF00), color-stop(1, #3F7F00) );
-  background: -moz-linear-gradient( center top, #5FBF00 5%, #3F7F00 100% );
+  background: -o-linear-gradient(bottom, #5FBF00 5%, #004C00 100%);
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5FBF00), color-stop(1, #004C00) );
+  background: -moz-linear-gradient( center top, #5FBF00 5%, #004C00 100% );
   background: -o-linear-gradient(top,#5FBF00,3F7F00);
 
   background-color: #5FBF00;
-  border: 0px solid #3F7F00;
+  border: 0px solid #004C00;
   vertical-align: middle;
   text-align: center;
   border-width: 0px 0px 1px 1px;
   font-size: 1.0em;
-  font-family: Arial;
   font-weight: bold;
   color: #FFF;
 }
@@ -227,7 +226,7 @@ footer li {
 /* tbody */
 
 .rooms-info table tbody tr:nth-child(odd) {
-  background-color: #d4ffaa;
+  background-color: #E5EDE5;
 }
 
 .rooms-info table tbody tr:nth-child(even) {
@@ -237,11 +236,10 @@ footer li {
 .rooms-info table tbody td {
   vertical-align: middle;
   text-align: center;
-  border: 1px solid #3F7F00;
+  border: 1px solid #004C00;
   border-width: 0px 1px 1px 0px;
   padding: 7px;
   font-size: 0.9em;
-  font-family: Arial;
   font-weight: normal;
   color: #000;
 }

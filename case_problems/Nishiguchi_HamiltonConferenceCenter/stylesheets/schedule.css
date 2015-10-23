@@ -55,7 +55,7 @@
 }
 
 .reservation-info table thead tr.scheduling-date th {
-    background-color: #0099CC;
+    background-color: #004C00;
     font-size: 2.0em;
     height: 60px;
 }
@@ -75,7 +75,7 @@
 .reservation-info table thead tr.room-names th {
     background-color: #DDD;
     font-size: 1.0em;
-    height: 40px;
+    height: 60px;
 }
 
 
@@ -90,20 +90,20 @@
 .reservation-info table thead tr.room-names th:nth-of-type(4),
 .reservation-info table thead tr.room-names th:nth-of-type(5) {
     width: 14%;
-    color: #ff8a00;
+    color: #6B4500;
 }
 
 .reservation-info table thead tr.room-names th:nth-of-type(6),
 .reservation-info table thead tr.room-names th:nth-of-type(7),
 .reservation-info table thead tr.room-names th:nth-of-type(8) {
     width: 11%;
-    color: #9933CC;
+    color: #551A8B;
 }
 
 
 /* Column groups */
 
-.reservation-info table col.timeColumn {
+.reservation-info table col.col-time {
     background-color: #DDD;
 }
 
@@ -139,7 +139,7 @@
 /* Reserved cells */
 
 td.booked {
-    background-color: #6dcaec;
+    background-color: #90D090;
     color: #333;
     font-style: italic;
 }

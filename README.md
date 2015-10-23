@@ -1,4 +1,4 @@
-# html_practice_code
+# Web dev notebook
 
 ## Some useful websites
 - [HTML Element Reference](http://www.w3schools.com/tags/default.asp)

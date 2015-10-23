@@ -27,11 +27,10 @@ input[type="text"] {
 }
 
 textarea {
-  width: 380px;
   height: 200px;
+  width: 100%;
   padding: 20px;
   font-size: 1.0em;
-  margin: 0 auto;
 }
 
 textarea, input[type="text"], select {
@@ -73,11 +72,16 @@ input[type="text"]:focus, textarea:focus, select:focus > legend {
 fieldset {
   border: 2px #DAA520 solid;
   border-radius: 10px;
-  width: 50%;
   margin: 0 auto;
 }
 
 /* Direct children of the form */
+form {
+  padding: 20px 40px;
+}
+
+
+
 form > fieldset {
   margin-bottom: 30px;
 }
@@ -144,6 +148,13 @@ fieldset.optionGroup input {
     width: 20px;
 }
 
+
+/**
+ * Check box
+ */
+#warranty p label {
+  margin-bottom: 15px;
+}
 
 /**
  * Button box
