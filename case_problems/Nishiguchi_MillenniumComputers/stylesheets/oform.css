@@ -13,6 +13,12 @@
    Description:      The styles for the order form
 */
 
+
+form {
+  padding: 20px 40px;
+}
+
+
 /**
  * Generic form fields
  */
@@ -27,6 +33,7 @@ input[type="text"] {
 }
 
 textarea {
+  display: block;
   height: 200px;
   width: 100%;
   padding: 20px;
@@ -70,18 +77,13 @@ input[type="text"]:focus, textarea:focus, select:focus > legend {
  * Field sets
  */
 fieldset {
-  border: 2px #DAA520 solid;
-  border-radius: 10px;
-  margin: 0 auto;
+  background-color: #F4F2E5;
+  border: 2px #998100 solid;
+  border-radius: 5px;
+  margin: 10px 3%;
 }
 
 /* Direct children of the form */
-form {
-  padding: 20px 40px;
-}
-
-
-
 form > fieldset {
   margin-bottom: 30px;
 }
@@ -96,7 +98,11 @@ form p {
 }
 
 legend {
-    font-size: 1.4em;
+    font-size: 1.6em;
+    color: #8B4513;
+    padding: 5px 0;
+    text-indent: 5px;
+    font-weight: bold;
 }
 
 label {
@@ -156,6 +162,36 @@ fieldset.optionGroup input {
   margin-bottom: 15px;
 }
 
+
+/**
+ * Form validation styles
+ */
+
+ /* when a field is considered valid by the browser */
+input:required:valid {
+    background: #FFF url(../images/go.png) bottom right no-repeat;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+ /* when a field is considered invalid by the browser */
+input:focus:invalid {
+    background: #FFF url(../images/stop.png) bottom right no-repeat;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+
 /**
  * Button box
  */
@@ -176,6 +212,7 @@ fieldset.optionGroup input {
     padding: 1.0em;
     background: #32CD32;
     color: #FFF;
+    width: 255px;
 }
 
 .btn-send-order:hover, .btn-send-order:focus, .btn-send-order:active,
@@ -188,6 +225,7 @@ fieldset.optionGroup input {
     background: #145214;
     box-shadow: none;
 }
+
 
 /**
  * Cancel order button
@@ -211,5 +249,50 @@ fieldset.optionGroup input {
 
 .btn-cancel-order:active, .btn-custom.active {
     background: #555;
+    box-shadow: none;
+}
+
+
+/**
+ * Contact me button
+ */
+ .contact-me {
+   text-align: center;
+   padding: 20px;
+ }
+
+ .contact-me ul {
+  list-style: none;
+  border-top: 1px solid #888;
+  margin-top: 20px;
+  padding: 10px 0 0 0;
+ }
+
+.contact-me li {
+  display: inline-block;
+  line-height: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.btn-contact-me {
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding: 0.7em;
+    background: #5B59BA;
+    color: #FFF;
+}
+
+.btn-contact-me:hover, .btn-contact-me:focus, .btn-contact-me:active,
+.btn-contact-me.active, .open > .dropdown-toggle.btn-contact-me {
+    background: #483D8B;
+    color: #FFF;
+}
+
+.btn-contact-me:active, .btn-contact-me.active {
+    background: #3B3178;
     box-shadow: none;
 }

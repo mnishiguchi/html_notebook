@@ -56,6 +56,7 @@
         <b>Welcome to Millennium!</b> <br />
         The time now is ...
       </p>
+      <span id="time-elapsed"></span>
     </section>
 
     <nav class="top-nav">
@@ -86,17 +87,19 @@
           <li>
             <span>Order form</span>
           </li>
-          <li>
-            <button type="button"class="btn-contact-me"><i class="fa fa-envelope-o"></i>&nbsp;Contact me</button>
-          </li>
         </ul>
       </section>
 
       <section class="card order-form">
-        <form>
-            <!-- field names -->
+        <form id="cOrder"
+              name="cOrder"
+              action="http://www.mill_computers.com/orders/process.cgi"
+              method="post">
+
+            <!-- Customer info -->
+
             <fieldset id="customer-info">
-              <legend>Customer information</legend>
+              <legend>Information about you</legend>
 
               <p class="required">
                 <label for="Name" >First Name</label>
@@ -122,7 +125,7 @@
                 <label for="zip">Zip</label>
                 <input type="text" name="zip" required
                        placeholder="nnnnn (-nnnn)"
-                       pattern="^\d{5}(\-\d{4}?$" />
+                       pattern="^[0-9]{5}(?:-[0-9]{4})?$" />
               </p>
               <p class="required">
                 <label for="phone">Phone</label>
@@ -140,9 +143,7 @@
             <fieldset id="computer-specs">
               <legend>Select computer specs</legend>
 
-              <!-- pSpeed
-              Prosessor speed: 3.2, 4, 5.2 GHz
-              -->
+              <!-- Prosessor speed: 3.2, 4, 5.2 GHz -->
               <p>
                 <label for="pSpeed">Processor speed</label>
                 <select name="pSpeed" id="pSpeed">
@@ -152,9 +153,7 @@
                 </select>
               </p>
 
-              <!-- mem
-              Memory: 1, 2, 4, 8 GB
-              -->
+              <!-- Memory: 1, 2, 4, 8 GB -->
               <p>
                 <label for="mem">Memory</label>
                 <select name="mem" id="mem">
@@ -165,9 +164,7 @@
                 </select>
               </p>
 
-              <!-- monitor
-              Monitor size: 15", 17", 19", 21"
-              -->
+              <!-- Monitor size: 15", 17", 19", 21" -->
               <p>
                 <label for="monitor">Monitor</label>
                 <select name="monitor" id="monitor">
@@ -178,9 +175,7 @@
                 </select>
               </p>
 
-              <!-- hd
-              Hard drive: 240GB, 500GB, 750GB, 1TB
-              -->
+              <!-- Hard drive: 240GB, 500GB, 750GB, 1TB -->
               <p>
                 <label for="hd">Hard drive</label>
                 <select name="pSpeed" id="hd">
@@ -199,7 +194,7 @@
               + mCard
             -->
             <fieldset id="computer-options">
-              <legend>Options</legend>
+              <legend>Add options</legend>
 
               <p>
                 <label for="dvd">DVD burner</label>
@@ -230,11 +225,12 @@
               </p>
             </fieldset>
 
-            <!-- Checkbox - warranty
-            -->
-            <fieldset id="warranty">
-              <legend>Warranty</legend>
+            <!-- Checkbox - warranty -->
 
+            <fieldset id="warranty">
+              <legend>Add 24-month extended warranty</legend>
+
+              <p>Do you want the 24-month extended warranty?</p>
               <p>
                 <label for="warranty">
                   <input type="checkbox" name="warranty" value="1">
@@ -243,10 +239,10 @@
               </p>
             </fieldset>
 
-            <!-- Textarea - additional info or comments
-            -->
+            <!-- Textarea - additional info or comments -->
+
             <fieldset>
-              <legend>Special instruction</legend>
+              <legend>Give us special instructions</legend>
 
               <p>
                 <textarea name="additional-info" id="additional-info" cols="30" rows="10"></textarea>
@@ -256,12 +252,24 @@
             <!-- Three form buttons
                 + Send order
                 + Cancel order
-                + Contact me-->
-            <div class="form-butons">
-              <input type="submit" value="Send order" class="btn-send-order">
-              <input type="reset" value="Cancel order" class="btn-cancel-order">
-            </div>
+                + Contact me -->
+            <section class="form-butons">
+                <input type="submit" value="Send order" class="btn-send-order">
+                <input type="reset" value="Cancel order" class="btn-cancel-order">
+            </section>
 
+            <section class="contact-me">
+            <ul>
+                <li>
+                  If you have any question please feel free to
+                </li>
+                <li>
+                  <a href="mailto:masatoshi.nishiguchi@udc.edu?subject=Hello%20Masatoshi%21%20How%20are%20you%3F&amp;body=Masa%2C%20this%20page%20looks%20great%21%21%21%20You%20are%20the%20man%21%21%21">
+                    <input type="button" value="Contact me!" class="btn-contact-me">
+                  </a>
+                </li>
+            </ul>
+            </section>
         </form>
 
       </section>
