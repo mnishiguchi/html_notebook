@@ -11,6 +11,25 @@
 
 ==
 
+## Character encoding (& code)
+- Special characters
+- HTML Entities and/or ISO Latin-1 codes can be placed in source code like any other alphanumeric characters to produce special characters and symbols that cannot be generated in HTML with normal keyboard commands.
+- https://www.utexas.edu/learn/html/spchar.html
+- http://www.degraeve.com/reference/specialcharacters.php
+- http://www.ascii.cl/htmlcodes.htm
+
+```
+using name:   &trade;
+using number: &#8482;
+```
+
+==
+
+## HTML URL Encoding (% code)
+- [HTML URL Encoding Reference ](http://www.w3schools.com/tags/ref_urlencode.asp)
+
+==
+
 ## Creating HTML documents
 ### with Notepad
 - save a document as html (The default format is txt)
@@ -97,20 +116,6 @@ http://searchsoa.techtarget.com/definition/SGML
 
 ### Relative path
 - From where you are
-
-==
-
-## Character encoding
-- Special characters
-- HTML Entities and/or ISO Latin-1 codes can be placed in source code like any other alphanumeric characters to produce special characters and symbols that cannot be generated in HTML with normal keyboard commands.
-- https://www.utexas.edu/learn/html/spchar.html
-- http://www.degraeve.com/reference/specialcharacters.php
-- http://www.ascii.cl/htmlcodes.htm
-
-```
-using name:   &trade;
-using number: &#8482;
-```
 
 ==
 

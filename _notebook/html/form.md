@@ -1,4 +1,8 @@
-# form
+# Form
+The HTML <form> element represents a document section that contains interactive controls to **submit information to a web server**.
+
+## the input tag
+- Used to get information from users
 
 ## The encrtype attribute
 

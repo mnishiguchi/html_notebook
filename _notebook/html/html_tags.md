@@ -1,5 +1,32 @@
 # Some HTML tags
 
+## Telling the browsers we are using HTML5
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--some boilerplate (meta info)-->
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <!--content-->
+    </body>
+</html>
+```
+
+==
+
+## Sementic tags
+- article
+- nav
+- header
+- footer
+- Compare to: div that is non-semantic and multi-purpose
+
+==
+
 ## Creating a navigation list
 
 ```html
@@ -136,4 +163,7 @@ Time   Saturday   Sunday
                 8:00 a.m. to 5:00 p.m. (eastern time)">
 <caption>Eastern time zone (UTC - 5:00)</caption>
 ```
+
+## input
+- Used to get information from users
 

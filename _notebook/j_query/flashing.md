@@ -1,6 +1,4 @@
-# JavaScript, jQuery, etc
-
-## Blinking
+# Flashing
 - [Some tricks](http://black-flag.net/jquery/20120124-3649.html)
 - [Can be done in CSS as well](http://www.will-hp.com/wpblog/web/72/)
 

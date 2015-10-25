@@ -1,5 +1,5 @@
 # Stylesheet
-
+- http://css3clickchart.com/#box-sizing
 - Note: Enter the style names in alphabetical order so that we can make our stylesheets easier to manage
 
 ## Defining a styling rule
@@ -120,6 +120,8 @@
 ==
 
 ## Contextual selectors
+- [保存版！CSS3セレクタの説明書](http://weboook.blog22.fc2.com/blog-entry-287.html)
+- [CSS3 structural pseudo-class selector tester](http://lea.verou.me/demos/nth.html)
 - [w3.org](http://www.w3.org/TR/CSS21/selector.html%23id-selectors)
 - [w3schools.com](http://www.w3schools.com/cssref/css_selectors.asp)
 - http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
@@ -177,65 +179,6 @@
 
 ==
 
-## Font family
-- [Commonly Used Font Combinations](http://www.w3schools.com/cssref/css_websafe_fonts.asp)
-- http://www.w3schools.com/cssref/pr_font_font-family.asp
-- If a font name contains white-space, it must be quoted. Single quotes must be used when using the "style" attribute in HTML.
-- If the browser does not support the first font, it tries the next font.
-
-```css
-h1#top {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-p {
-    font-family: "Times New Roman", Georgia, Serif;
-}
-```
-
-==
-
-## Overlaying stuff on an image
-
-- [position:relativeとposition:absoluteで画像や文字を重ねてみよう](http://naifix.com/relative-absolute/) 
-
-==
-
 ## Unicode - Geometric Shapes
 - https://en.m.wikipedia.org/wiki/Geometric_Shapes
 
-==
-
-## 点滅
-- [CSSでテキスト、画像、何でも点滅](http://www.will-hp.com/wpblog/web/72/)
-
-==
-
-## Dividing a paragraph into three column layout
-
-```css
-#intro p {
-   -moz-column-count: 3;
-   -webkit-column-count: 3;
-    column-count: 3;
-
-   -moz-column-gap: 20px;
-   -webkit-column-gap: 20px;
-    column-gap: 20px;
-
-   -moz-column-rule: 1px solid black;
-   -webkit-column-rule: 1px solid black;
-    column-rule: 1px solid black;
-}  
-
-```
-
-==
-
-## Vertically Align text in a Div
-- http://stackoverflow.com/questions/2939914/vertically-align-text-in-a-div
-
-==
-
-## よく忘れるCSSの小技
-- http://qiita.com/matsui-a/items/9de76659429593ed7a88#css-clear-fix
