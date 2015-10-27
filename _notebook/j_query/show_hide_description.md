@@ -1,11 +1,11 @@
 # Show / hide a description text
 
 ## How to do it
-### 1. Add `opacity: 0;` to the element so that the element is hidden by default
-### 2. Create a class (e.g. `class="show-description"`) and add it to the parent element
-### 3. Create styles for when the element is shown
-### 4. Use on-click listener and .toggleClass()
-### 5. Add `transition` property for animation
+1. Add `opacity: 0;` to the element so that the element is hidden by default
+2. Create a class (e.g. `class="show-description"`) and add it to the parent element
+3. Create styles for when the element is shown
+4. Use on-click listener and .toggleClass()
+5. Add `transition` property for animation
 
 HTML
 ```html
@@ -56,7 +56,7 @@ JS
     });
 ```
 
-or Vanilla js
+or
 
 ```javascript
     // Vanilla
@@ -65,5 +65,14 @@ or Vanilla js
     menuItems.addEventListener('click', function(e) {
         menuItems.classList.toggle('show-description');
     }, false);
+```
+
+```javascript
+// Vanilla
+[].forEach.call( document.querySelectorAll( '.menuItem div' ), function ( el ) {
+    el.addEventListener( 'click', function () {
+        el.classList.toggle('show-description');
+    }, false );
+});
 ```
 
