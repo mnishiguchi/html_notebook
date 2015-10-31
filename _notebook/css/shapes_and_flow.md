@@ -94,16 +94,31 @@ position: relative;
 left: 140px;
 ```
 
-### z-index
+### The z-index propperty
 - 0 by default
 - negative value to move something behind our main working layer
 - positive valud to move something in front
 
 ```css
+position: relative;
+top: -620px;
+left: 190px;
 z-index: -1;
 ```
 
+### The transform property
+- lets us modify the coordinate space of the CSS visual formatting model.
+- Elements can be translated, rotated, scaled, and skewed.
+- Can be declared only one time for any item
+- https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+https://css-tricks.com/almanac/properties/t/transform/
 
-
+```css
+/* scaleY(-1)
+   Creates a mirror image across the Y-axis */
+        transform: scaleY(-1) rotate(20deg);
+-webkit-transform: scaleY(-1) rotate(20deg);
+   -moz-transform: scaleY(-1) rotate(20deg);
+```
 
 

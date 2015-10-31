@@ -1,4 +1,4 @@
-# Show / hide a description text
+# slider description text
 
 ## How to do it
 1. Add `opacity: 0;` to the element so that the element is hidden by default
