@@ -21,3 +21,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 ==
 
+## getting child element
+- http://stackoverflow.com/questions/10567709/javascript-get-child-element
+```javascript
+aDiv.getElementsByTagName("P")[0].scrollTop = 0;
+```
+
+==
+
+##  resetting scroll position
+```javascript
+var aDiv = document.getElementById('aDivId');
+aDiv.scrollTop = 0;
+```
+
+==
+
+
+
+
+

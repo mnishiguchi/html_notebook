@@ -182,3 +182,7 @@
 ## Unicode - Geometric Shapes
 - https://en.m.wikipedia.org/wiki/Geometric_Shapes
 
+==
+
+## Vendor_Prefix
+- https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix

@@ -4,6 +4,15 @@
 
 ## RADIAL
 - Radiate outward, in all directions from a central point
+- Can be circle or ellipse
+- Color can include size in pixels or in percent
+
+```css
+/* Standard syntax
+background: radial-gradient(shape, centercolor, outercolor), backgroundcolor; */
+background: radial-gradient(circle, while 15%, transparent 40%), #CC5;
+```
+
 
 ## LINEAR
 - Only go in one directioon in a line
