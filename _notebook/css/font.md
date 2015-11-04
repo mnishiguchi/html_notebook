@@ -22,3 +22,19 @@ p {
 - one free, easy-to-use resource
 - http://www.google.com/fonts/
 
+==
+
+## Combining all text formatting in a single style
+- font: font-style font-variant font-weight font-size/font-height font-family;
+- Do not have to include all of the values in the font property
+- The only required values: **font-size** and **font-family**
+
+```css
+footer address {
+    background-color: rgb(55, 102, 55);
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+    font: normal small-caps 0.8em/4em 'Times New Roman', Times, Serif;
+    text-align: center;
+}
+```

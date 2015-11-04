@@ -1,6 +1,7 @@
 # Multimedia
 - Displayed within a web page in a fashion similar to an inline image
 - **the HTML5 multimedia**  Many browsers now include built-in support for audio and video files
+- Need to embed plug-ins if the browser does not have a multimedia feature or capability
 
 ## plug-ins
 - Used when the browser does not have a multimedia feature or capability
@@ -12,7 +13,8 @@
 ==
 
 ## Digital audio
-- Use audio or embed tags
+
+- Use HTML5 `<audio>` or `<embed>` tags
 - **amplitude and frequency**
 - **sampling rate**
     - Measured in kilohertz (kHz)
@@ -29,7 +31,17 @@
     - e.g. MP3s can achieve near-CD-quality sound at bit rate of 192 to 320 Kbps
 
 ### the HTML5 audio tag
-- not supported by older browsers
+- Plays an audio file in HTML
+- Not supported by older browsers
+- http://www.w3schools.com/html/html5_audio.asp
+
+```html
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+```
 
 ### the embed tag
 - Embed plug-ins
@@ -37,7 +49,8 @@
 - Disadvantages: Relies on users to have a certain piece of software installed in addition to a browser. 
 
 ### Audio controls
-- The appearance of the audio controls varies from browser to browser. For a uniform look, we must create our own using form element along with a JavaScript program to manage hte actions of the control buttons
+- The appearance of the audio controls varies from browser to browser.
+- For a uniform look, we must create our own using form element along with a JavaScript program to manage hte actions of the control buttons
 
 ### MIME types
 - Multipurpose Internet Mail Extentions
@@ -46,6 +59,7 @@
 ==
 
 ## Digital video
+
 - a seris of single images or frames that are played in rapid succession
 - **aspect ratios** (width-to-height ratio)
     - many are 4:3, some 1.85:1 or 2.39:1
@@ -71,9 +85,10 @@
     - https://en.wikipedia.org/wiki/Video_file_format   
 
 ### the HTML5 video element
+
+- The HTML5 <video> element specifies a standard way to embed a video in a web page.
 - Before HTML5, there was no standard for showing videos on a web page.
 - Before HTML5, videos could only be played with a plug-in (like flash).
-- The HTML5 <video> element specifies a standard way to embed a video in a web page.
 - http://www.w3schools.com/html/html5_video.asp
 
 ```html
@@ -98,8 +113,8 @@ Your browser does not support the video tag.
     - graphic images
     - PDF files
     - the content of other web pages
-- [HTML4](http://www.w3schools.com/tags/tag_object.asp)
-- [HTML Object Element](http://www.w3schools.com/html/html_object.asp)
+- http://www.w3schools.com/tags/tag_object.asp
+- http://www.w3schools.com/html/html_object.asp
 - **attributes**
     - data: the source of the file used in the object
     - form: the name of the form that the object belongs to (HTML5) 
@@ -126,12 +141,81 @@ Your browser does not support the video tag.
 </object>
 ```
 
+### Working with Flash
+- Two main file formats: FLV and SWF
+
+#### Flash video(FLV)**
+    - Contains a video clips
+    - Displayed by Adobe Flash Player
+
+#### Shockwave Flash(SWF)**
+    - Flash video file is often embedded with in a SWF file
+    - Used for multimedia, vector graphics and ActionScript
+    - Contains video, audio, animations, interactive scripts, program controls and other features that provide real-time interactive animation for the viewer
+    - Advantages: Programmers can create their own players, containing video controls tailored to the specific needs of their web site
+    - https://en.wikipedia.org/wiki/SWF
+
+#### Cross-browser support
+- For users runnning older browsers, we can nest an object element within the video element
+- **Flash parameters**
+    + https://helpx.adobe.com/flash/kb/flash-object-embed-tag-attributes.html
+    + e.g. `<param name="quality" value="high">`
+- We can nest a hypertext linnk directing users to a location where they can download and install the Flash player
+
+```html
+<video controls="controls">
+    <source src="rwdance.mp4" />
+    <source src="rwdance.webm" />
+    
+    <!-- For cross-browser support -->
+    <object data="rwdance.swf"
+            type="application/x-shockwave-flash"
+            width="280" height="239">
+        <!-- Flash parameters -->
+        <param name="movie" value="rwdance.swf">
+
+        <!-- code used by browsers that support neither HTML5 nor Flash -->
+        You must have the
+        <a href="http://www.adobe.com/products/shockwaveplayer/">
+            Shockwave Player
+        </a>
+        to play the video clip.
+    </object>
+</video>
+```
+
 ==
 
-### SWF
-- https://en.wikipedia.org/wiki/SWF
-- an abbreviation for small web format, an Adobe Flash file format
-- used for multimedia, vector graphics and ActionScript
+### Embedding videos from the YouTube
+- YouTube videos are embedded using either:
+    - the YouTube Shockwave Flash player file (.swf), or
+    - an HTML5 video player on the user's device
+
+- General syntax
+```
+<object width="value" height="value">
+    <param name="movie" value="youtube-url" />
+    <param name="..." value="..." />
+
+    <embed src="http://www.youtube.com/id?param1=val1&param2=val2"
+           type="application/x-shockwave-flash"
+           width="value" height="value"
+           ... />
+</object>
+```
+
+- Alternate embedding code using iframe
+  - supports browsers using HTML5 that do not support Flash
+  - The iframe element is used to store inline frames, which are windows into the content of another web page or internet resource
+
+```html
+<!-- code generated by YouTube -->
+<iframe width="560" height="315"
+        src="https://www.youtube.com/embed/PcR6BzeqsG0"
+        frameborder="0" allowfullscreen>
+</iframe>
+```
+
 
 
 ## Embedding other objects
