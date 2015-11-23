@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 ==
 
-## getting child element
+## Getting child element
 - http://stackoverflow.com/questions/10567709/javascript-get-child-element
 ```javascript
 aDiv.getElementsByTagName("P")[0].scrollTop = 0;
@@ -29,13 +29,25 @@ aDiv.getElementsByTagName("P")[0].scrollTop = 0;
 
 ==
 
-##  resetting scroll position
+## Resetting scroll position
 ```javascript
 var aDiv = document.getElementById('aDivId');
 aDiv.scrollTop = 0;
 ```
 
 ==
+
+## Inspecting code using console.log(...) or alert(...)
+
+### Printing the content of an array
+- Using console.log(aArrayName) or alert(aArrayName), we can inspect all the elements that the array currently holds.
+
+## Printing the content of a function
+- Using console.log(aFuncName) or alert(aFuncName), we can inspect the actual code.
+
+==
+
+
 
 
 

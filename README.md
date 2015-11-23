@@ -121,3 +121,11 @@ http://searchsoa.techtarget.com/definition/SGML
 
 ## FTP
 - https://kb.iu.edu/d/aerg
+
+==
+
+## XML
+
+- asterisk (*) - The element may appear zero or more times
+- question mark (?) - The element may appear zero or one time, only
+- plus sign (+) - The element appears at least once if not more times

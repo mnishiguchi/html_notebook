@@ -2,6 +2,11 @@
 - http://css3clickchart.com/#box-sizing
 - Note: Enter the style names in alphabetical order so that we can make our stylesheets easier to manage
 
+## CSS reset code
+- http://cssreset.com/
+
+==
+
 ## Defining a styling rule
 
 ### User-defined styles
