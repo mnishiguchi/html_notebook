@@ -67,6 +67,27 @@ article {
 
 ==
 
+## Bootstrap breakpoints
+- https://scotch.io/bar-talk/whats-new-in-bootstrap-4
+
+```scss
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 34em,
+  // Medium screen / tablet
+  md: 48em,
+  // Large screen / desktop
+  lg: 62em,
+  // Extra large screen / wide desktop
+  xl: 75em
+) !default;
+```
+
+==
+
 ## Extra whitespace for readability
 - At smaller sizes, whitespace increases readability
+
 
