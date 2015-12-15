@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>
+    Favorite City
+  </title>
+
+  <!-- Load Font Awesome -->
+  <link rel="stylesheet" type='text/css' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- Load Bootstrap styles -->
+  <link rel="stylesheet" type='text/css' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+
+  <!-- Load app styles -->
+  <link rel="stylesheet" type='text/css' href="styles/main.css" />
+
+  <!--Load jQuery scripts-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <!--Load Bootstrap scripts-->
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+
+  <!--Load app scripts-->
+  <script type="text/javascript" src="scripts/main.js"></script>
+</head>
+
+<body id="head">
+
+  <div class="container" id="main_wrapper">
+
+    <div class="headgraphic">
+      <a>
+        <img src="images/stock1.jpg">
+      </a>
+    </div>
+
+    <!--
+      Nav tabs
+      - These are linked to a corresponding content below.
+    -->
+    <ul class="nav nav-pills top_nav" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#home" role="tab">
+          Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#food" role="tab">
+          MAT - FOOD
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#musik" role="tab">
+          MUSIK
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#room_request" role="tab">
+          ROOM REQUEST
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#map" role="tab">
+          MAP
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#contact" role="tab">
+          CONTACT
+        </a>
+      </li>
+    </ul>
+
+    <!-- Search bar -->
+    <div
+      class="googleSearchBar randomColor"
+      title="Click me to change color">
+      <form
+        method="get"
+        action="http://www.google.com/search"
+        class="form-inline" >
+        <div class="form-group">
+          <input type="text"
+            name="q"
+            class="form-control"
+            placeholder="Google Search">
+        </div>
+        <button
+          type="submit"
+          class="btn btn-secondary">
+          <i class="fa fa-search"></i>
+        </button>
+        &nbsp; Click me to change colors!
+      </form>
+    </div>
+
+    <!-- Contents -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="home" role="tabpanel">
+
+        <div class="myCard">
+          <p>
+            <img
+              src="images/sthmimage3.jpg"
+              alt="section 1 image"
+              class="imgleft"
+              height="150" width="150">
+            Listen to sweet Swedish National Anthem while you learn by clicking
+            <a href="audio/sweden.mp3">here</a>
+            Stockholm (Swedish pronunciation: [ˈstɔkːˈɔlm, ˈstɔkːˈhɔlm ˈstɔkːɔlm])
+            is the capital of Sweden and the most populous city in Scandinavia, with
+             905,184 people living in the municipality,[2] approximately 1.4 million
+             in the urban area,[4] and a total population close to 2.2 million in
+            the metropolitan area.[2] The city is spread across 14 islands on the
+            coast in the southeast of Sweden at the mouth of Lake Mälaren, by the
+            Stockholm archipelago and the Baltic sea. The area has been settled
+            since the Stone Age, in the 6th millennium BC, and was founded as a city
+             in 1252 by Birger Jarl.Stockholm (Swedish pronunciation: [ˈstɔkːˈɔlm,
+            ˈstɔkːˈhɔlm ˈstɔkːɔlm]) is the capital of Sweden and the most populous
+            city in Scandinavia, with 905,184 people living in the municipality,[2]
+            approximately 1.4 million in the urban area,[4] and a total population
+            close to 2.2 million in the metropolitan area.[2] The city is spread
+            across 14 islands on the coast in the southeast of Sweden at the mouth
+            of Lake Mälaren, by the Stockholm archipelago and the Baltic sea. The
+            area has been settled since the Stone Age, in the 6th millennium BC, and
+             was founded as a city in 1252 by Birger Jarl.
+          </p>
+        </div>
+
+        <div class="myCard">
+          <p>
+            <a class="lead" href="http://www.vasamuseet.se/en/">
+              Vasa Museum
+            </a>
+            a must see museum of coolness.
+          </p>
+          <p>
+            <a class="lead" href="http://en.wikipedia.org/wiki/Djurg%C3%A5rden">
+              Djurgarden
+            </a>
+            also known as the Kungliga Djurgarden, or The Royal Game Park, is another must see.
+          </p>
+          <p>
+            <a class="lead" href="http://en.wikipedia.org/wiki/Gamla_stan">
+              Gamla stan
+            </a>
+            also know as The Old Town, this 13th century town still consists of medieval
+            alleyways, cobblestone streets, and archaic architecture.
+          </p>
+          <p>
+            <a class="lead" href="http://en.wikipedia.org/wiki/Drottningholm_Palace">
+              Drottningholm Palace
+            </a>
+            No trip would be complete without a visit to the Swedish Royal Family.
+            Besides, it also sounds like Nottingham.
+          </p>
+        </div>
+
+        <div class="myCard">
+          <p class="link_to_food">
+            <a>
+              Food is good everywhere, especially in Stockholm.
+            </a>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- content:food -->
+      <div class="tab-pane" id="food" role="tabpanel">
+        <div class="myCard food_item">
+          <img
+            alt="Lingon Berry"
+            longdesc="Sweden's only fruit"
+            src="images/food1.jpg"
+            class="imgleft">
+          Just like ketchup and mustard,
+          <a href="http://en.wikipedia.org/wiki/Lingonberry_jam" target="_blank" title="Lingonsylt">
+            lingonberry jam
+          </a>
+          is widely used to accompany a variety of dishes, from meatballs and pancakes to
+          porridge and black pudding.
+          But despite its sweetness, it is rarely used on bread. Thanks to the Right
+          of Public Access (<a href="http://en.wikipedia.org/wiki/Allemansrätten"><em>Allemansrätten</em></a>),
+          which gives everyone the freedom to roam and enjoy nature, many Swedes grow
+          up picking lingonberries in the forest, and using these tiny tart red fruits
+          to make a jam-like preserve.</div>
+
+        <div class="myCard food_item">
+          <img
+            alt="Pickled Herring"
+            longdesc="A delicassy in jar"
+            src="images/food2.jpg"
+            class="imgleft">
+          You might swap meatballs (köttbullar) for mini sausages (prinskorvar)
+          or pick cured salmon (gravad lax) rather than smoked, but your smorgasbord
+          wouldn’t be complete without pickled herring (sill). This fishy favourite
+          remains the basis of every typical Swedish buffet. With an abundance of
+          herring in both the North and Baltic Seas, Swedes have been pickling
+          since the Middle Ages, mainly as a way of preserving the fish for storage and transportation.
+        </div>
+
+        <div class="myCard food_item">
+          <img
+            alt="Cripsbread"
+            longdesc="Swedish style crackers"
+            src="images/food3.jpg"
+            class="imgleft">
+          In addition to bread and butter, you’ll often find a type of crispbread
+          (knäckebröd) served alongside your main meal. This is what the Swedes
+          tend to reach for. Once considered poor man’s food, crispbread has been
+          baked in Sweden for over 500 years, can last for at least a year if stored
+          properly, and remains among the most versatile edible products. The Swedish
+          National Board of Health and Welfare (Socialstyrelsen) ran a campaign in
+          the 1970s suggesting Swedes should eat six to eight slices of bread a day, including crispbread.
+        </div>
+
+        <div class="myCard food_item">
+          <img
+            alt="Swedish Pancakes"
+            longdesc="Not the terrible euro Crepe crap"
+            src="images/food5.jpg"
+            class="imgleft">
+          Nordic pancakes are similar to the French-style crêpes. In some Nordic
+          countries, they are served with jam or fruit, especially lingonberries
+          (or the butter from that fruit) as a dessert with a variety of savoury fillings.
+          Traditional Swedish variations can be exotic. Beside the usual thin pancakes,
+          called pannkakor, which resembles the French crêpes and, often served with
+          whipped cream and jam, are traditionally eaten for lunch on Thursdays
+          with pea soup, the Swedish cuisine has plättar—very small pancakes,
+          which resemble tiny English pancakes, and are usually fried in a special
+          pan called a "plättlagg", a sort of normal size frying pan with indentations
+          to allow for several (normally seven) to be made at once.
+        </div>
+      </div>
+
+      <!-- content:musik -->
+      <div class="tab-pane" id="musik" role="tabpanel">
+
+        <div class="myCard">
+          <iframe src="https://player.vimeo.com/video/41179231" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+
+        <div class="myCard">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/3F1W8HJLV5s?list=PLENlJlz08dMoHfdhqVxji_kmUELqG59R0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="myCard">
+          <iframe width="420" height="315" src="https://www.youtube.com/embed/WWhemBGoD_0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="myCard">
+          <iframe width="420" height="315" src="https://www.youtube.com/embed/UQl8fURGSrA" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- content:room_request -->
+      <div class="tab-pane" id="room_request" role="tabpanel">
+
+        <div class="myCard">
+
+          <form>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th colspan="2">
+                    <h2>Room Request Form</h2>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    First Name:
+                  </td>
+                  <td>
+                    <label for="fn"></label>
+                    <input type="text"
+                      name="fn"
+                      id="fn">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Last Name:
+                  </td>
+                  <td>
+                    <label for="ln"></label>
+                    <input type="text"
+                      name="ln"
+                      id="ln">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Number:
+                  </td>
+                  <td>
+                    <label for="address"></label>
+                    <input type="text"
+                      name="address"
+                      id="address">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Comment:
+                  </td>
+                  <td>
+                    <label for="ln"></label>
+                    <textarea
+                      name="ln"
+                      id="ln">
+                    </textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Like to receieve monthly Swedish Pancakes?:
+                  </td>
+                  <td>
+                    <p>
+                      <input name="radio" id="yes" value="yes" type="radio">
+                      YES!!
+                      <br>
+                      <input name="radio2" id="yes" value="yes" type="radio">
+                      Unsure..
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Language:
+                  </td>
+                  <td>
+                    <label for="list"></label>
+                    <select name="list" id="list">
+                      <option value="0" selected="selected">Choose one</option>
+                      <option value="1">English</option>
+                      <option value="2">Spanish</option>
+                      <option value="3">Klingon</option>
+                      <option value="4">Swedish</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Room Preference:
+                  </td>
+                  <td>
+                    <p>
+                      <label>
+                        <input name="CheckRoombox1" value="true" id="CheckRoombox1_0" type="checkbox">
+                        Single
+                      </label>
+                      <br>
+                      <label>
+                        <input name="CheckRoombox1" value="true" id="CheckRoombox1_1" type="checkbox">
+                        Double
+                      </label>
+                      <br>
+                      <label>
+                        <input name="CheckRoombox1" value="true" id="CheckRoombox1_2" type="checkbox">
+                        Family
+                      </label>
+                      <br>
+                      <label>
+                        <input name="CheckRoombox1" value="true" id="CheckRoombox1_3" type="checkbox">
+                        Janitor Closet
+                      </label>
+                      <br>
+                      <label>
+                        <input name="CheckRoombox1" value="true" id="CheckRoombox1_4" type="checkbox">
+                        Super King Deluxe
+                      </label>
+                      <br>
+                      <label>
+                      <input name="CheckRoombox1" value="true" id="CheckRoombox1_5" type="checkbox">
+                        Rent whole Level
+                      </label>
+                      <br>
+                    </p>
+                    <label for="cb"></label>
+                  </td>
+                </tr>
+                <!--
+                  Clicking on submit button triggers the call of sayKonnichiwa() function.
+                -->
+                <tr>
+                  <td colspan="2">
+                    <div class="btn_box">
+                      <input type="reset"
+                        name="reset"
+                        id="reset"
+                        value="reset"
+                        class="btn btn-secondary">
+                      <input type="button"
+                        name="submit"
+                        id="submit"
+                        value="submit"
+                        class="btn btn-success"
+                        onclick="sayKonnichiwa()">
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+      </div>
+
+      <!-- content:map -->
+      <div class="tab-pane" id="map" role="tabpanel">
+        <img
+          alt="Map of Stockholm"
+          width="100%" height="100%"
+          longdesc="Map to the Attractions of Stockholm"
+          src="images/map1.gif"/>
+      </div>
+
+      <!-- content:contact -->
+      <div class="tab-pane" id="contact" role="tabpanel">
+        <div class="myCard">
+          Please email any questions
+          <a href="mailto:stockholm@awesome.com?subject=Stockholm%20Message">HERE</a>
+        </div>
+
+        <div class="myCard">
+          Or you may send us random stuff here:<br />
+          <a href="http://www.kungahuset.se/royalcourt/visittheroyalpalaces/theroyalpalace.4.396160511584257f218000138.htmlhttp://www.kungahuset.se/royalcourt/visittheroyalpalaces/theroyalpalace.4.396160511584257f218000138.html">
+          "StockHolm Syndromers<br />
+          111 30 Stockholm, Sweden</a><br />
+        </div>
+
+        <div class="myCard">
+          Additionally you may call :+46 8 402 61 30 for questions and inquiries.
+          <br />
+          <a href="https://github.com/gdseestedt">Ask for Grand Master Gustav</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- go to the top -->
+    <div id="sectiongototop" align="center">
+      <a href="#head" class="gotothetop">GO TO TOP</a>
+    </div>
+
+  </div><!-- end container -->
+
+</body>
+</html>

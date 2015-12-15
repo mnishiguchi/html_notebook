@@ -11,3 +11,12 @@
     border-top: none !important;
 }
 ```
+
+## Center the table data in a th/td
+
+```css
+thead tr th,
+.btn_box {
+  text-align: center;
+}
+```

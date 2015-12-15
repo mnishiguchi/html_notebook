@@ -1,0 +1,137 @@
+/*
+  Universal styles
+ */
+
+body {
+  background-color: #3CF;
+  background-image: url(../images/bgstock1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -0-background-size:cover;
+  background-size: cover;
+
+  padding: 0 0 0 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+.btn {
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: 0 none;
+}
+
+
+/*
+  Table
+ */
+
+
+table {
+  text-align: center;
+}
+
+td {
+  vertical-align: top;
+}
+
+td:first-child {
+  text-align: right;
+  width: 40%;
+}
+
+td:last-child {
+  text-align: left;
+  width: 60%;
+}
+
+thead tr th,
+.btn_box {
+  text-align: center;
+}
+
+
+/*
+  Styles for specific elements
+ */
+
+
+#main_wrapper {
+  margin: auto;
+  border: 1px solid #999;
+  background-color: rgba(51,204,255, 0.8);
+  padding: 10px;
+}
+
+.headgraphic img {
+   height: auto;
+   width:  100%;
+}
+
+.top_nav,
+.googleSearchBar {
+  padding: 10px;
+  border: 1px solid #999;
+  color: #999;
+  background-color: #FC0;
+}
+
+.myCard {
+  background-color: #F5E0A9;
+  margin-top: 32px;
+  padding: 10px;
+  border: 1px solid #FC0;
+}
+
+p.link_to_food,
+p.link_to_food > a {
+  height: 30px;
+  vertical-align: middle;
+}
+
+p.link_to_food {
+  text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 300;
+}
+
+#sectiongototop {
+  background-color: #FC0;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #999;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: #999;
+  text-align: center;
+}
+
+.imgleft {
+  vertical-align: top;
+  float: left;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+}
+
+.food_item {
+  color: rgb(34, 34, 34);
+  letter-spacing: normal;
+}
+
+.food_item img {
+  height: 100px;
+  width: 100px;
+}

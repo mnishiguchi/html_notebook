@@ -1,6 +1,3 @@
-# Generating random background colors on button click
-
-```js
 /**
  * I ensure that document has been loaded.
  * https://api.jquery.com/ready/
@@ -18,7 +15,7 @@ $( document ).ready(function(){
     var blue  = Math.floor(Math.random() * 255);
 
     // Prepare a CSS RGBA value as a string
-    var randomRGBA = 'rgba(' + red + ',' + green + ',' + blue + ',1)';
+    var randomRGBA = 'rgba(' + red + ',' + green + ',' + blue + ', .5)';
 
     // Set the backbround to a new color
     $( this ).css( "background", randomRGBA );
@@ -26,4 +23,11 @@ $( document ).ready(function(){
   });
 
 });
-```
+
+
+/**
+ * I say Kon-nichi-wa to you.
+ */
+function sayKonnichiwa() {
+  alert('Konnichiwa!!!');
+}
