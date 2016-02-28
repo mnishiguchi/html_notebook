@@ -1,3 +1,3 @@
 # HTML notebook
-- Some note about HTML basics
+My notebook for web development.
 
