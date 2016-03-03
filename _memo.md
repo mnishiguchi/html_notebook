@@ -80,17 +80,3 @@
 
 # Position
 - Every element is static by default.
-- 
-
-```css
-#special
-
-
-```
-
-
-
-
-
-
-

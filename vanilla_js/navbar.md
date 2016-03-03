@@ -74,9 +74,8 @@
         nav.classList.remove( "cssSlideUp");
       });
       window.addEventListener( 'resize', function() {
-        nav.classList.remove( "cssSlideUp");
+        nav.click();
       });
-
     });
 
   })();
@@ -162,4 +161,168 @@
 #navbar nav li a.active:hover {
   text-decoration: none;
 }
+```
+
+==
+
+## Hamburger animation (three bars => X)
+
+```html
+  <div id="navbar">
+
+    <div class="container">
+      <hgroup>
+        <!-- Logo -->
+        <h1 id="logo">
+          <a href="/#/home">
+            Wok'n'Roll
+          </a>
+        </h1>
+
+        <!-- Hamburger button -->
+        <div id="hamburger">
+          <div class="inner">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </hgroup>
+
+      <!-- Nav links -->
+      <nav>
+        <ul>
+          <li>
+            <a href="/#/home" class="nav-link home">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/#/restaurant" class="nav-link restaurant">
+              Restaurant
+            </a>
+          </li>
+          <li>
+            <a href="/#/karaoke" class="nav-link karaoke">
+              Karaoke
+            </a>
+          </li>
+          <li>
+            <a href="/#/online-order" class="nav-link online-order">
+              Online Order
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- /.container -->
+  </div><!-- /.navbar -->
+```
+
+```css
+ /* Outer */
+#hamburger {
+  background: #999;
+  position: absolute;
+  top:0;
+  right:20px;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: right;
+  background: white;
+  cursor: pointer;
+}
+
+/* Inner */
+#hamburger .inner {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 15px;
+}
+
+/* Bars */
+#hamburger .inner .bar {
+  display: block;
+  width: 30px;
+  height: 6px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #333;
+  transition: all .3s ease-out;
+}
+#hamburger .inner .bar:first-child {
+  top: 0;
+}
+#hamburger .inner .bar:nth-child(2),
+#hamburger .inner .bar:nth-child(3) {
+  top: 12px;
+}
+#hamburger .inner .bar:last-child {
+  top: 24px;
+}
+
+/* Active hamburger */
+#hamburger.active .inner .bar:first-child {
+  top: -15px;
+  opacity: 0;
+}
+#hamburger.active .inner .bar:last-child {
+  top: 51px;
+  opacity: 0;
+}
+#hamburger.active .inner .bar:nth-child(2) {
+  transform-origin: center;
+  transform: rotate( 45deg );
+  background: red;
+}
+#hamburger.active .inner .bar:nth-child(3) {
+  transform-origin: center;
+  transform: rotate( -45deg );
+  background: red;
+}
+```
+
+```js
+  ( function() {
+
+    // Store elements.
+    var hamburger;
+    var logo;
+    var nav;
+
+    // Wait until DOM is loaded and then execute.
+    document.addEventListener( "DOMContentLoaded", function( event ) {
+
+      // Find elements.
+      hamburger = document.querySelector( "#hamburger" );
+      nav       = document.querySelector( "#navbar nav" );
+      logo      = document.querySelector( "#logo" );
+
+      // Apply the slide up animation defined in CSS to the navigation when:
+      // - the hamburger is clicked.
+      hamburger.addEventListener( 'click', toggleNavbarAnimations );
+
+      // Remove the animation when:
+      // - the mouse leaves the naviagation
+      // - the navigation is clicked
+      // - the logo is clicked
+      // - the window size is resized
+      nav.addEventListener( 'mouseleave', removeNavbarAnimations );
+      nav.addEventListener( 'click',      removeNavbarAnimations );
+      logo.addEventListener( 'click',    function() { nav.click(); });
+      window.addEventListener( 'resize', function() { nav.click(); });
+    });
+    function toggleNavbarAnimations() {
+      nav.classList.toggle( "cssSlideUp" );
+      hamburger.classList.toggle( "active" );
+    }
+    function removeNavbarAnimations() {
+      nav.classList.remove( "cssSlideUp" );
+      hamburger.classList.remove( "active" );
+    }
+  })();
 ```
