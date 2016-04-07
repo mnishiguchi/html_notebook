@@ -1,9 +1,11 @@
 # JavaScript basics
 
-## Converting jQuery code into vanilla
+## Vanilla vs jQuery
+- http://vanilla-js.com/
 - https://gist.github.com/liamcurry/2597326
 - http://bl.ocks.org/joyrexus/5322252
 - http://gomakethings.com/ditching-jquery-for-vanilla-js/
+- http://tokkono.cute.coocan.jp/blog/slow/index.php/xhtmlcss/jquery-alternative-tips/
 
 ==
 
